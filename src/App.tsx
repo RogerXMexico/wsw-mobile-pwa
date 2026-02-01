@@ -8,11 +8,13 @@ import OfflineBanner from './components/OfflineBanner';
 import { SkeletonList } from './components/SkeletonCard';
 import LoginPage from './pages/LoginPage';
 
-// Lazy-load heavy pages (strategy data is 13K lines)
-const LearnPage = lazy(() => import('./pages/LearnPage'));
-const ModulePage = lazy(() => import('./pages/ModulePage'));
+// Lazy-load pages
+const RulesPage = lazy(() => import('./pages/LearnPage'));
+const SectionPage = lazy(() => import('./pages/ModulePage'));
 const StrategyPage = lazy(() => import('./pages/StrategyPage'));
 const StrategiesPage = lazy(() => import('./pages/StrategiesPage'));
+const ToolsPage = lazy(() => import('./pages/ToolsPage'));
+const SocialPage = lazy(() => import('./pages/SocialPage'));
 const EncyclopediaPage = lazy(() => import('./pages/EncyclopediaPage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const QuizPage = lazy(() => import('./pages/QuizPage'));
@@ -40,10 +42,21 @@ function AppRoutes() {
         <OfflineBanner />
         <Suspense fallback={<LoadingScreen />}>
           <Routes>
-            <Route path="/" element={<LearnPage />} />
-            <Route path="/module/:moduleId" element={<ModulePage />} />
+            {/* Tab 1: Rules of the Jungle */}
+            <Route path="/" element={<RulesPage />} />
+            <Route path="/section/:moduleId" element={<SectionPage />} />
             <Route path="/strategy/:strategyId" element={<StrategyPage />} />
+
+            {/* Tab 2: Strategies */}
             <Route path="/strategies" element={<StrategiesPage />} />
+
+            {/* Tab 3: Tools */}
+            <Route path="/tools" element={<ToolsPage />} />
+
+            {/* Tab 4: Social */}
+            <Route path="/social" element={<SocialPage />} />
+
+            {/* Utility pages */}
             <Route path="/encyclopedia" element={<EncyclopediaPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/quiz" element={<QuizPage />} />

@@ -1,8 +1,10 @@
 import { STRATEGIES } from '../data/strategies';
 import { TIER_INFO } from '../data/tierInfo';
 
-// Module definitions mapping tiers to curriculum modules
-export interface Module {
+// ============ TAB 1: RULES OF THE JUNGLE ============
+// Educational foundations — learn before you trade
+
+export interface Section {
   id: string;
   title: string;
   emoji: string;
@@ -10,13 +12,13 @@ export interface Module {
   tiers: number[];
 }
 
-export const MODULES: Module[] = [
+export const RULES_SECTIONS: Section[] = [
   {
     id: 'foundations',
     title: 'Foundations',
     emoji: '🌱',
-    description: 'What are options? Core vocabulary, mindset, and the rules of the jungle.',
-    tiers: [0, 0.5, 2],
+    description: 'What are options? Core vocabulary, mindset, and the rules.',
+    tiers: [0],
   },
   {
     id: 'market-structure',
@@ -26,7 +28,27 @@ export const MODULES: Module[] = [
     tiers: [1],
   },
   {
-    id: 'core-strategies',
+    id: 'risk',
+    title: 'Risk Management',
+    emoji: '🛡️',
+    description: 'The Greeks, pricing, IV, and position sizing fundamentals.',
+    tiers: [2],
+  },
+  {
+    id: 'express-lane',
+    title: 'Express Lane',
+    emoji: '🚀',
+    description: 'Quick-start: the 4 essential strategies to get trading.',
+    tiers: [0.5],
+  },
+];
+
+// ============ TAB 2: STRATEGIES ============
+// All trading strategies organized by complexity
+
+export const STRATEGY_SECTIONS: Section[] = [
+  {
+    id: 'anchors',
     title: 'Core Strategies',
     emoji: '⚓',
     description: 'The anchor trades: Long Call, Covered Call, CSP, Protective Put, Collar.',
@@ -47,7 +69,7 @@ export const MODULES: Module[] = [
     tiers: [5],
   },
   {
-    id: 'time-skew',
+    id: 'time-diagonals',
     title: 'Time & Diagonals',
     emoji: '⏳',
     description: 'Calendar spreads, PMCC, Diagonals, Double Diagonals.',
@@ -60,37 +82,43 @@ export const MODULES: Module[] = [
     description: 'Ratio spreads, Butterflies, Jade Lizard, Synthetics, ZEBRA.',
     tiers: [7],
   },
-  {
-    id: 'event-horizons',
-    title: 'Event Horizons',
-    emoji: '🌀',
-    description: 'Earnings plays, binary events, and how the pros trade them.',
-    tiers: [8],
-  },
-  {
-    id: 'tools',
-    title: 'Strategy Tools',
-    emoji: '🛠️',
-    description: 'Calculators, screeners, journal — your trading toolkit.',
-    tiers: [9],
-  },
-  {
-    id: 'lets-play',
-    title: "Let's Play",
-    emoji: '🎮',
-    description: 'Put it all together with simulated trades and challenges.',
-    tiers: [10],
-  },
 ];
 
-export function getStrategiesForModule(moduleId: string) {
-  const mod = MODULES.find(m => m.id === moduleId);
-  if (!mod) return [];
-  return STRATEGIES.filter(s => mod.tiers.includes(s.tier));
+// ============ TAB 3: TOOLS ============
+// Tier 9 strategy tools
+
+export const TOOLS_SECTION: Section = {
+  id: 'tools',
+  title: 'Strategy Tools',
+  emoji: '🛠️',
+  description: 'Calculators, screeners, journal — your trading toolkit.',
+  tiers: [9],
+};
+
+// ============ TAB 4: SOCIAL ============
+// Tier 10 social/gamification
+
+export const SOCIAL_SECTION: Section = {
+  id: 'social',
+  title: 'The Arena',
+  emoji: '🏟️',
+  description: 'Live trades, competitions, tribes, and daily missions.',
+  tiers: [10],
+};
+
+// ============ HELPERS ============
+
+export function getStrategiesForSection(section: Section) {
+  return STRATEGIES.filter(s => section.tiers.includes(s.tier));
 }
 
 export function getStrategiesForTier(tier: number) {
   return STRATEGIES.filter(s => s.tier === tier);
+}
+
+export function getAllTradingStrategies() {
+  // Tiers 3-7: all actual trading strategies for the encyclopedia
+  return STRATEGIES.filter(s => [3, 3.5, 4, 5, 6, 7, 8].includes(s.tier));
 }
 
 export function getTierInfo(tier: number) {

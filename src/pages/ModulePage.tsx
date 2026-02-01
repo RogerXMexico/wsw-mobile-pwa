@@ -1,26 +1,29 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { MODULES, getStrategiesForModule, getTierInfo } from '../utils/curriculum';
+import { RULES_SECTIONS, STRATEGY_SECTIONS, TOOLS_SECTION, SOCIAL_SECTION, getStrategiesForSection, getTierInfo } from '../utils/curriculum';
 import { useProgress } from '../contexts/ProgressContext';
 import StrategyCard from '../components/StrategyCard';
 
-export default function ModulePage() {
+// Combine all sections for lookup
+const ALL_SECTIONS = [...RULES_SECTIONS, ...STRATEGY_SECTIONS, TOOLS_SECTION, SOCIAL_SECTION];
+
+export default function SectionPage() {
   const { moduleId } = useParams();
   const navigate = useNavigate();
   const { isCompleted } = useProgress();
 
-  const mod = MODULES.find(m => m.id === moduleId);
-  if (!mod) {
+  const section = ALL_SECTIONS.find(s => s.id === moduleId);
+  if (!section) {
     return (
       <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">
-        Module not found
+        Section not found
       </div>
     );
   }
 
-  const strategies = getStrategiesForModule(mod.id);
+  const strategies = getStrategiesForSection(section);
 
-  // Group by tier
+  // Group by tier if section spans multiple tiers
   const tierGroups: Record<number, typeof strategies> = {};
   strategies.forEach(s => {
     if (!tierGroups[s.tier]) tierGroups[s.tier] = [];
@@ -28,12 +31,13 @@ export default function ModulePage() {
   });
 
   const sortedTiers = Object.keys(tierGroups).map(Number).sort((a, b) => a - b);
+  const hasMultipleTiers = sortedTiers.length > 1;
 
   return (
     <div className="px-4 pb-24" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 16px)' }}>
       {/* Header */}
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate(-1)}
         className="flex items-center gap-2 text-slate-400 mb-4 active:text-white transition-colors min-h-[44px]"
       >
         <ArrowLeft className="w-5 h-5" />
@@ -42,41 +46,59 @@ export default function ModulePage() {
 
       <div className="mb-6">
         <div className="flex items-center gap-3 mb-1">
-          <span className="text-3xl">{mod.emoji}</span>
-          <h1 className="text-xl font-bold text-white">{mod.title}</h1>
+          <span className="text-3xl">{section.emoji}</span>
+          <h1 className="text-xl font-bold text-white">{section.title}</h1>
         </div>
-        <p className="text-slate-400 text-sm">{mod.description}</p>
+        <p className="text-slate-400 text-sm">{section.description}</p>
+        <p className="text-slate-500 text-xs mt-1">
+          {strategies.filter(s => isCompleted(s.id)).length}/{strategies.length} completed
+        </p>
       </div>
 
-      {/* Strategy list grouped by tier */}
-      {sortedTiers.map(tier => {
-        const tierInfo = getTierInfo(tier);
-        const tierStrategies = tierGroups[tier];
+      {/* Strategy list */}
+      {hasMultipleTiers ? (
+        // Grouped by tier
+        sortedTiers.map(tier => {
+          const tierInfo = getTierInfo(tier);
+          const tierStrategies = tierGroups[tier];
 
-        return (
-          <div key={tier} className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              <h3 className="text-sm font-medium text-slate-300">
-                Tier {tier} — {tierInfo?.name || 'Unknown'}
-              </h3>
-              <span className="text-xs text-slate-600">
-                ({tierStrategies.filter(s => isCompleted(s.id)).length}/{tierStrategies.length})
-              </span>
+          return (
+            <div key={tier} className="mb-6">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                <h3 className="text-sm font-medium text-slate-300">
+                  {tierInfo?.name || `Tier ${tier}`}
+                </h3>
+                <span className="text-xs text-slate-600">
+                  ({tierStrategies.filter(s => isCompleted(s.id)).length}/{tierStrategies.length})
+                </span>
+              </div>
+              <div className="space-y-2">
+                {tierStrategies.map(strategy => (
+                  <StrategyCard
+                    key={strategy.id}
+                    strategy={strategy}
+                    completed={isCompleted(strategy.id)}
+                    onClick={() => navigate(`/strategy/${strategy.id}`)}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="space-y-2">
-              {tierStrategies.map(strategy => (
-                <StrategyCard
-                  key={strategy.id}
-                  strategy={strategy}
-                  completed={isCompleted(strategy.id)}
-                  onClick={() => navigate(`/strategy/${strategy.id}`)}
-                />
-              ))}
-            </div>
-          </div>
-        );
-      })}
+          );
+        })
+      ) : (
+        // Flat list (single tier)
+        <div className="space-y-2">
+          {strategies.map(strategy => (
+            <StrategyCard
+              key={strategy.id}
+              strategy={strategy}
+              completed={isCompleted(strategy.id)}
+              onClick={() => navigate(`/strategy/${strategy.id}`)}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

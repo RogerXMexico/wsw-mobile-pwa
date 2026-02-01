@@ -3,7 +3,7 @@ import { User, LogOut, Sparkles, BookOpen, CheckCircle } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useProgress } from '../contexts/ProgressContext';
 import { STRATEGIES } from '../data/strategies';
-import { MODULES } from '../utils/curriculum';
+import { RULES_SECTIONS, STRATEGY_SECTIONS } from '../utils/curriculum';
 
 export default function ProfilePage() {
   const { user, signOut } = useAuth();

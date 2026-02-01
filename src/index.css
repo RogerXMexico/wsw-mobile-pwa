@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --color-jungle-emerald: #10b981;
+  --color-jungle-amber: #f59e0b;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+/* Hide scrollbar for filter chips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Strategy HTML content — mobile overrides */
+.strategy-content {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.strategy-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.strategy-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.strategy-content p {
+  margin-bottom: 0.75rem;
+}
+
+.strategy-content ul, .strategy-content ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.strategy-content li {
+  margin-bottom: 0.25rem;
+}
+
+/* Override desktop-width containers */
+.strategy-content > div {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+.strategy-content .rounded-2xl,
+.strategy-content .rounded-xl {
+  border-radius: 12px;
+}
+
+.strategy-content .p-6 {
+  padding: 16px;
+}
+
+.strategy-content .p-8 {
+  padding: 16px;
+}
+
+/* Tables → stack on mobile */
+.strategy-content table {
+  display: block;
+  overflow-x: auto;
+  font-size: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.strategy-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Safe area padding for bottom nav */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .pb-safe {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  }
+}

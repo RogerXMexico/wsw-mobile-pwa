@@ -30,11 +30,11 @@ export default function ModulePage() {
   const sortedTiers = Object.keys(tierGroups).map(Number).sort((a, b) => a - b);
 
   return (
-    <div className="px-4 pt-4 pb-24">
+    <div className="px-4 pb-24" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 16px)' }}>
       {/* Header */}
       <button
         onClick={() => navigate('/')}
-        className="flex items-center gap-2 text-slate-400 mb-4 active:text-white transition-colors"
+        className="flex items-center gap-2 text-slate-400 mb-4 active:text-white transition-colors min-h-[44px]"
       >
         <ArrowLeft className="w-5 h-5" />
         <span className="text-sm">Back</span>

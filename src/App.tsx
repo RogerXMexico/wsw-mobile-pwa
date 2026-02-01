@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { ProgressProvider } from './contexts/ProgressContext';
 import BottomNav from './components/BottomNav';
+import ErrorBoundary from './components/ErrorBoundary';
+import OfflineBanner from './components/OfflineBanner';
+import { SkeletonList } from './components/SkeletonCard';
 import LoginPage from './pages/LoginPage';
 
 // Lazy-load heavy pages (strategy data is 13K lines)
@@ -15,22 +18,26 @@ const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const QuizPage = lazy(() => import('./pages/QuizPage'));
 
 function LoadingScreen() {
-  return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-      <div className="text-4xl animate-pulse">🐒</div>
-    </div>
-  );
+  return <SkeletonList count={6} />;
 }
 
 function AppRoutes() {
   const { user, loading } = useAuth();
 
-  if (loading) return <LoadingScreen />;
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <div className="text-4xl animate-pulse">🐒</div>
+      </div>
+    );
+  }
+
   if (!user) return <LoginPage />;
 
   return (
     <ProgressProvider>
       <div className="min-h-screen bg-slate-950">
+        <OfflineBanner />
         <Suspense fallback={<LoadingScreen />}>
           <Routes>
             <Route path="/" element={<LearnPage />} />
@@ -51,10 +58,12 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <AuthProvider>
+          <AppRoutes />
+        </AuthProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }

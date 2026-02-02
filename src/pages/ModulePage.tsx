@@ -15,7 +15,7 @@ export default function SectionPage() {
   const section = ALL_SECTIONS.find(s => s.id === moduleId);
   if (!section) {
     return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">
+      <div className="min-h-screen bg-black flex items-center justify-center text-white">
         Section not found
       </div>
     );
@@ -34,11 +34,11 @@ export default function SectionPage() {
   const hasMultipleTiers = sortedTiers.length > 1;
 
   return (
-    <div className="px-4 pb-24" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 16px)' }}>
+    <div className="px-4 pb-24" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 24px)' }}>
       {/* Header */}
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-2 text-slate-400 mb-4 active:text-white transition-colors min-h-[44px]"
+        className="flex items-center gap-2 text-[#39ff14] mb-4 active:text-white transition-colors min-h-[44px]"
       >
         <ArrowLeft className="w-5 h-5" />
         <span className="text-sm">Back</span>
@@ -49,8 +49,8 @@ export default function SectionPage() {
           <span className="text-3xl">{section.emoji}</span>
           <h1 className="text-xl font-bold text-white">{section.title}</h1>
         </div>
-        <p className="text-slate-400 text-sm">{section.description}</p>
-        <p className="text-slate-500 text-xs mt-1">
+        <p className="text-zinc-400 text-sm">{section.description}</p>
+        <p className="text-zinc-500 text-xs mt-1">
           {strategies.filter(s => isCompleted(s.id)).length}/{strategies.length} completed
         </p>
       </div>
@@ -65,11 +65,11 @@ export default function SectionPage() {
           return (
             <div key={tier} className="mb-6">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                <h3 className="text-sm font-medium text-slate-300">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#39ff14]" />
+                <h3 className="text-sm font-medium text-zinc-300">
                   {tierInfo?.name || `Tier ${tier}`}
                 </h3>
-                <span className="text-xs text-slate-600">
+                <span className="text-xs text-zinc-600">
                   ({tierStrategies.filter(s => isCompleted(s.id)).length}/{tierStrategies.length})
                 </span>
               </div>

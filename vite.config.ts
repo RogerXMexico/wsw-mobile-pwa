@@ -8,6 +8,9 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: '/',
+  server: {
+    allowedHosts: ['ip-172-31-14-240.tail042a68.ts.net'],
+  },
   build: {
     target: 'esnext',
     rollupOptions: {

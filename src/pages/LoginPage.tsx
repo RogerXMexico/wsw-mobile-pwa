@@ -38,36 +38,36 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6">
       {/* Logo */}
       <div className="mb-8 text-center">
         <div className="text-6xl mb-4">🐒</div>
         <h1 className="text-2xl font-bold text-white">WSW Options University</h1>
-        <p className="text-slate-400 mt-2 text-sm">Master the Options Jungle</p>
+        <p className="text-zinc-400 mt-2 text-sm">Master the Options Jungle</p>
       </div>
 
       {/* Form */}
       <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
         {!isLogin && (
           <div>
-            <label className="block text-sm font-medium text-slate-300 mb-1.5">Name</label>
+            <label className="block text-sm font-medium text-zinc-300 mb-1.5">Name</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors text-base"
+              className="w-full px-4 py-3 bg-[#0a0a0a] border border-[#39ff14]/15 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-[#39ff14]/50 transition-colors text-base"
               placeholder="Your name"
             />
           </div>
         )}
 
         <div>
-          <label className="block text-sm font-medium text-slate-300 mb-1.5">Email</label>
+          <label className="block text-sm font-medium text-zinc-300 mb-1.5">Email</label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors text-base"
+            className="w-full px-4 py-3 bg-[#0a0a0a] border border-[#39ff14]/15 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-[#39ff14]/50 transition-colors text-base"
             placeholder="you@example.com"
             required
             autoComplete="email"
@@ -75,12 +75,12 @@ export default function LoginPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-300 mb-1.5">Password</label>
+          <label className="block text-sm font-medium text-zinc-300 mb-1.5">Password</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors text-base"
+            className="w-full px-4 py-3 bg-[#0a0a0a] border border-[#39ff14]/15 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-[#39ff14]/50 transition-colors text-base"
             placeholder="••••••••"
             required
             minLength={6}
@@ -95,7 +95,7 @@ export default function LoginPage() {
         )}
 
         {success && (
-          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 text-emerald-400 text-sm">
+          <div className="bg-[#39ff14]/10 border border-emerald-500/30 rounded-xl p-3 text-[#39ff14] text-sm">
             {success}
           </div>
         )}
@@ -103,18 +103,18 @@ export default function LoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3.5 bg-emerald-600 text-white font-semibold rounded-xl transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed text-base"
+          className="w-full py-3.5 bg-[#39ff14] text-black font-semibold rounded-xl transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed text-base"
         >
           {loading ? 'Please wait...' : isLogin ? 'Sign In' : 'Create Account'}
         </button>
       </form>
 
       {/* Toggle */}
-      <div className="mt-6 text-slate-400 text-sm">
+      <div className="mt-6 text-zinc-400 text-sm">
         {isLogin ? "Don't have an account? " : 'Already have an account? '}
         <button
           onClick={() => { setIsLogin(!isLogin); setError(''); setSuccess(''); }}
-          className="text-emerald-500 font-medium"
+          className="text-[#39ff14] font-medium"
         >
           {isLogin ? 'Sign Up' : 'Sign In'}
         </button>

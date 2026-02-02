@@ -28,16 +28,16 @@ export default function StrategyCard({ strategy, completed, onClick }: StrategyC
   return (
     <button
       onClick={onClick}
-      className="w-full flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-xl p-4 active:scale-[0.98] transition-transform text-left"
+      className="w-full flex items-center gap-3 bg-[#0a0a0a] border border-[#39ff14]/20 rounded-xl p-4 active:scale-[0.98] transition-transform text-left"
     >
       {/* Completion indicator */}
       <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
         completed
-          ? 'bg-emerald-600/20 border border-emerald-500/40'
-          : 'bg-slate-800 border border-slate-700'
+          ? 'bg-[#39ff14]/20 border border-[#39ff14]/40'
+          : 'bg-zinc-900 border border-zinc-800'
       }`}>
         {completed ? (
-          <Check className="w-4 h-4 text-emerald-400" />
+          <Check className="w-4 h-4 text-[#39ff14]" />
         ) : (
           <span className="text-sm">{getOutlookEmoji(strategy.outlook)}</span>
         )}
@@ -51,13 +51,13 @@ export default function StrategyCard({ strategy, completed, onClick }: StrategyC
             {tierInfo?.name || `Tier ${strategy.tier}`}
           </span>
           {strategy.objective && (
-            <span className="text-[10px] text-slate-500 truncate">{strategy.objective}</span>
+            <span className="text-[10px] text-zinc-500 truncate">{strategy.objective}</span>
           )}
         </div>
       </div>
 
       {/* Arrow */}
-      <ChevronRight className="w-4 h-4 text-slate-600 flex-shrink-0" />
+      <ChevronRight className="w-4 h-4 text-zinc-600 flex-shrink-0" />
     </button>
   );
 }

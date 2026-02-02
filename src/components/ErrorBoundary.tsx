@@ -22,10 +22,10 @@ export default class ErrorBoundary extends React.Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center px-6 text-center">
+        <div className="min-h-screen bg-black flex flex-col items-center justify-center px-6 text-center">
           <div className="text-4xl mb-4">🙈</div>
           <h2 className="text-lg font-bold text-white mb-2">Something went wrong</h2>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-zinc-400 text-sm mb-6">
             {this.state.error?.message || 'An unexpected error occurred'}
           </p>
           <button
@@ -33,7 +33,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
               this.setState({ hasError: false });
               window.location.href = '/';
             }}
-            className="px-5 py-2.5 bg-emerald-600 text-white font-medium rounded-xl active:scale-95 transition-transform"
+            className="px-5 py-2.5 bg-[#39ff14] text-black text-white font-medium rounded-xl active:scale-95 transition-transform"
           >
             Go Home
           </button>

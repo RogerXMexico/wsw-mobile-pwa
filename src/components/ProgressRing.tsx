@@ -5,7 +5,7 @@ interface ProgressRingProps {
   color?: string;
 }
 
-export default function ProgressRing({ progress, size = 48, strokeWidth = 3, color = '#10b981' }: ProgressRingProps) {
+export default function ProgressRing({ progress, size = 48, strokeWidth = 3, color = '#39ff14' }: ProgressRingProps) {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (progress / 100) * circumference;
@@ -21,7 +21,7 @@ export default function ProgressRing({ progress, size = 48, strokeWidth = 3, col
           fill="none"
           stroke="currentColor"
           strokeWidth={strokeWidth}
-          className="text-slate-800"
+          className="text-zinc-800"
         />
         {/* Progress circle */}
         {progress > 0 && (
@@ -40,7 +40,7 @@ export default function ProgressRing({ progress, size = 48, strokeWidth = 3, col
         )}
       </svg>
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-xs font-medium text-slate-400">
+        <span className="text-xs font-medium text-zinc-400">
           {progress > 0 ? `${Math.round(progress)}%` : '—'}
         </span>
       </div>

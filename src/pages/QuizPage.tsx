@@ -54,17 +54,17 @@ export default function QuizPage() {
     if (!animal) return null;
 
     return (
-      <div className="min-h-screen bg-slate-950 px-6 py-12 flex flex-col items-center justify-center">
+      <div className="min-h-screen bg-black px-6 py-12 flex flex-col items-center justify-center">
         <div className="text-6xl mb-4">{animal.emoji}</div>
         <h2 className="text-2xl font-bold text-white mb-2">You're {animal.name}!</h2>
-        <p className="text-emerald-400 font-medium mb-4">{animal.characterName}</p>
-        <p className="text-slate-400 text-sm text-center mb-8 max-w-sm leading-relaxed">
+        <p className="text-[#39ff14] font-medium mb-4">{animal.characterName}</p>
+        <p className="text-zinc-400 text-sm text-center mb-8 max-w-sm leading-relaxed">
           {animal.personality}
         </p>
         <p className="text-amber-400 text-sm italic mb-8">"{animal.catchphrase}"</p>
         <button
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white font-semibold rounded-xl active:scale-95 transition-transform"
+          className="flex items-center gap-2 px-6 py-3 bg-[#39ff14] text-black text-white font-semibold rounded-xl active:scale-95 transition-transform"
         >
           <Sparkles className="w-4 h-4" />
           Start Learning
@@ -75,12 +75,12 @@ export default function QuizPage() {
 
   // Quiz screen
   return (
-    <div className="min-h-screen bg-slate-950 px-4 pt-4 pb-8">
+    <div className="min-h-screen bg-black px-4 pb-8" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 24px)' }}>
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-1.5 text-slate-400 mb-6 active:text-white"
+        className="flex items-center gap-1.5 text-[#39ff14] mb-6 active:text-white min-h-[44px]"
       >
-        <ArrowLeft className="w-5 h-5" />
+        <ArrowLeft className="w-5 h-5 text-[#39ff14]" />
         <span className="text-sm">Back</span>
       </button>
 
@@ -90,7 +90,7 @@ export default function QuizPage() {
           <div
             key={i}
             className={`h-1 flex-1 rounded-full transition-colors ${
-              i <= currentQ ? 'bg-emerald-500' : 'bg-slate-800'
+              i <= currentQ ? 'bg-[#39ff14]' : 'bg-zinc-900'
             }`}
           />
         ))}
@@ -98,7 +98,7 @@ export default function QuizPage() {
 
       {/* Question */}
       <div className="mb-8">
-        <p className="text-xs text-slate-500 mb-2">Question {currentQ + 1} of {questions.length}</p>
+        <p className="text-xs text-zinc-500 mb-2">Question {currentQ + 1} of {questions.length}</p>
         <h2 className="text-lg font-semibold text-white leading-relaxed">{question.question}</h2>
       </div>
 
@@ -110,10 +110,10 @@ export default function QuizPage() {
             onClick={() => selected === null ? handleSelect(i) : undefined}
             className={`w-full text-left p-4 rounded-xl border transition-all text-sm leading-relaxed ${
               selected === i
-                ? 'bg-emerald-600/20 border-emerald-500/40 text-emerald-300'
+                ? 'bg-[#39ff14] text-black/20 border-emerald-500/40 text-emerald-300'
                 : selected !== null
-                ? 'bg-slate-900/50 border-slate-800/50 text-slate-500'
-                : 'bg-slate-900 border-slate-800 text-slate-300 active:border-emerald-500/30'
+                ? 'bg-[#0a0a0a]/80 border-[#39ff14]/10 text-zinc-500'
+                : 'bg-[#0a0a0a] border-[#39ff14]/20 text-zinc-300 active:border-emerald-500/30'
             }`}
           >
             {opt.text}

@@ -497,7 +497,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
                 <div class="shrink-0 relative group">
                     <div class="w-56 h-56 rounded-full border-4 border-emerald-500 overflow-hidden bg-black/60 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
-                        <img src="/assets/Krzysztof_Monkey_Cute.webp" alt="Monkey with Bananas" class="w-full h-full object-cover" />
+                        <img src="/assets/Krzysztof_Monkey_Cute.png" alt="Monkey with Bananas" class="w-full h-full object-cover" />
                     </div>
                 </div>
                 <div class="text-center md:text-left">
@@ -1409,7 +1409,7 @@ export const STRATEGIES: Strategy[] = [
                         </p>
                     </div>
                     <div class="shrink-0 wise-owl-container" style="perspective: 1000px;">
-                         <img src="/metaphors/owl.webp" alt="Wise Owl with Glasses" class="wise-owl-image w-48 h-48 object-contain filter drop-shadow-[0_0_15px_rgba(234,179,8,0.3)] transform -rotate-6 cursor-pointer transition-all duration-300" style="animation: owlBob 3s ease-in-out infinite;" />
+                         <img src="/metaphors/owl.png" alt="Wise Owl with Glasses" class="wise-owl-image w-48 h-48 object-contain filter drop-shadow-[0_0_15px_rgba(234,179,8,0.3)] transform -rotate-6 cursor-pointer transition-all duration-300" style="animation: owlBob 3s ease-in-out infinite;" />
                     </div>
                     <style>
                         @keyframes owlBob {
@@ -1447,7 +1447,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-rose-500/0 blur-xl group-hover/avatar:bg-rose-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-rose-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(251,113,133,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-rose-400 transition-all duration-300">
-                                <img src="/assets/Lemur Scalper.webp" alt="Lemur the Scalper" class="w-full h-full object-cover" />
+                                <img src="/assets/Lemur Scalper.png" alt="Lemur the Scalper" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1472,7 +1472,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-amber-500/0 blur-xl group-hover/avatar:bg-amber-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-amber-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(251,191,36,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-amber-400 transition-all duration-300">
-                                <img src="/assets/Cheetah Day Trader.webp" alt="Cheetah the Day Trader" class="w-full h-full object-cover" />
+                                <img src="/assets/Cheetah Day Trader.png" alt="Cheetah the Day Trader" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1497,7 +1497,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-cyan-500/0 blur-xl group-hover/avatar:bg-cyan-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-cyan-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(34,211,238,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-cyan-400 transition-all duration-300">
-                                <img src="/assets/Monkey Swing Trader.webp" alt="Monkey the Swing Trader" class="w-full h-full object-cover" />
+                                <img src="/assets/Monkey Swing Trader.png" alt="Monkey the Swing Trader" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1522,7 +1522,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-emerald-500/0 blur-xl group-hover/avatar:bg-emerald-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(52,211,153,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-emerald-400 transition-all duration-300">
-                                <img src="/assets/Badger Investor.webp" alt="Badger the Investor" class="w-full h-full object-cover" />
+                                <img src="/assets/Badger Investor.png" alt="Badger the Investor" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1627,7 +1627,7 @@ export const STRATEGIES: Strategy[] = [
                 "
             >
                 <div class="w-36 h-36 shrink-0 mt-1 rounded-full overflow-hidden filter drop-shadow-[0_0_20px_rgba(244,63,94,0.6)]">
-                    <img src="/assets/Fatal_Mistake_Warning.webp" alt="Fatal Mistake Warning" class="w-full h-full object-cover" />
+                    <img src="/assets/Fatal_Mistake_Warning.png" alt="Fatal Mistake Warning" class="w-full h-full object-cover" />
                 </div>
                 <div>
                     <h5 class="text-rose-400 font-black text-3xl mb-4" style="text-shadow: 0 0 20px rgba(244,63,94,0.5)">Fatal Mistake</h5>
@@ -2471,7 +2471,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
                 <div class="shrink-0 relative group">
                     <div class="w-56 h-56 rounded-full border-4 border-emerald-500 overflow-hidden bg-black/60 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
-                        <img src="/assets/Krzysztof_Monkey_Cute.webp" alt="Monkey with Bananas" class="w-full h-full object-cover" />
+                        <img src="/assets/Krzysztof_Monkey_Cute.png" alt="Monkey with Bananas" class="w-full h-full object-cover" />
                     </div>
                 </div>
                 <div class="text-center md:text-left">
@@ -4433,7 +4433,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="bg-black/60 border border-amber-500/30 rounded-2xl p-6 overflow-hidden">
                 <div class="flex flex-col lg:flex-row gap-6 items-center">
                     <div class="lg:w-1/2">
-                        <img src="/assets/Badger Bias.webp" alt="Badger Bias - Stay Flexible" class="w-full h-auto rounded-xl border border-white/10" />
+                        <img src="/assets/Badger Bias.png" alt="Badger Bias - Stay Flexible" class="w-full h-auto rounded-xl border border-white/10" />
                     </div>
                     <div class="lg:w-1/2 space-y-4">
                         <h3 class="text-2xl font-bold text-amber-400 flex items-center gap-3">
@@ -4587,7 +4587,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-indigo-400 font-black uppercase text-lg tracking-widest">Monthly</span>
                     <span class="text-sm text-slate-400 uppercase">The Macro Strategist</span>
                 </div>
-                <img src="/eos_charts/eos_monthly.webp" alt="EOS Monthly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-indigo-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_monthly.png" alt="EOS Monthly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-indigo-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>The Primary Trend.</b> The tide itself. This establishes the dominant direction of the market (Secular Bull or Bear). We align with this, but rarely trade it directly.</p>
             </div>
 
@@ -4598,7 +4598,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-emerald-400 font-black uppercase text-lg tracking-widest">Weekly</span>
                     <span class="text-sm text-slate-400 uppercase">The Investor</span>
                 </div>
-                <img src="/eos_charts/eos_weekly.webp" alt="EOS Weekly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-emerald-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_weekly.png" alt="EOS Weekly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-emerald-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Deep Time.</b> Tectonic movements. Ignoring the daily noise. Wealth is built here. Compounding works best in this frame.</p>
             </div>
 
@@ -4609,7 +4609,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-amber-400 font-black uppercase text-lg tracking-widest">Daily</span>
                     <span class="text-sm text-slate-400 uppercase">The Swing Trader</span>
                 </div>
-                <img src="/eos_charts/eos_daily.webp" alt="EOS Daily Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-amber-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_daily.png" alt="EOS Daily Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-amber-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Human Time.</b> The rhythm of business. Trends last for days or weeks. This is the "sweet spot" for most option strategies.</p>
             </div>
 
@@ -4620,7 +4620,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-rose-400 font-black uppercase text-lg tracking-widest">Minute</span>
                     <span class="text-sm text-slate-400 uppercase">The Day Trader</span>
                 </div>
-                <img src="/eos_charts/eos_minute.webp" alt="EOS Minute Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-rose-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_minute.png" alt="EOS Minute Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-rose-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Quantum Foam.</b> Chaos and noise. Time moves incredibly fast here. One mistake can be fatal. High stress, high adrenaline.</p>
             </div>
 
@@ -5382,7 +5382,7 @@ export const STRATEGIES: Strategy[] = [
             <!-- Anatomy of IV Image -->
             <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-amber-500/20">
                 <h3 class="text-xl font-bold text-amber-400 mb-4 text-center">Anatomy of Implied Volatility</h3>
-                <img src="/assets/Anatomy of IV.webp" alt="Anatomy of Implied Volatility" class="w-full max-w-3xl mx-auto rounded-xl border border-white/10" />
+                <img src="/assets/Anatomy of IV.png" alt="Anatomy of Implied Volatility" class="w-full max-w-3xl mx-auto rounded-xl border border-white/10" />
             </div>
             <div class="bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/10 text-center relative overflow-hidden">
                 <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent pointer-events-none"></div>
@@ -5666,7 +5666,7 @@ export const STRATEGIES: Strategy[] = [
         <div class="space-y-8">
             <!-- Brian Shannon Stage Analysis Chart -->
             <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/assets/market-stages.webp" alt="Brian Shannon's 4 Stages of Market Structure" class="w-full h-auto" />
+                <img src="/assets/market-stages.jpg" alt="Brian Shannon's 4 Stages of Market Structure" class="w-full h-auto" />
             </div>
 
             <div class="text-center text-xs text-slate-500 italic">Chart by Brian Shannon (@alphatrends) - The 4 Stages of a Stock's Life Cycle</div>
@@ -5718,7 +5718,7 @@ export const STRATEGIES: Strategy[] = [
 
             <!-- Market Cycle -->
             <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/assets/market cycle.webp" alt="Market Cycle" class="w-full h-auto" />
+                <img src="/assets/market cycle.png" alt="Market Cycle" class="w-full h-auto" />
             </div>
 
             <!-- STRATEGIES FOR EACH STAGE -->
@@ -6044,7 +6044,7 @@ export const STRATEGIES: Strategy[] = [
             <!-- Clear Support & Resistance Example -->
             <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-cyan-500/20">
                 <h3 class="text-xl font-bold text-cyan-400 mb-4 text-center">Clear Support & Resistance Levels</h3>
-                <img src="/s:r/Clear Support Resistence.webp" alt="Clear Support and Resistance Levels" class="w-full max-w-4xl mx-auto rounded-xl border border-white/10" />
+                <img src="/s:r/Clear Support Resistence.png" alt="Clear Support and Resistance Levels" class="w-full max-w-4xl mx-auto rounded-xl border border-white/10" />
             </div>
 
             <!-- Interactive Chart Exercise -->
@@ -6058,7 +6058,7 @@ export const STRATEGIES: Strategy[] = [
                     Where has price bounced multiple times? Where has it been rejected? Train your eye to see what the market remembers.
                 </p>
                 <div class="relative rounded-xl overflow-hidden border border-slate-700 bg-black/50">
-                    <img src="/s:r/zs_daily.webp" alt="Daily Chart - Draw Support and Resistance" class="w-full h-auto object-contain" />
+                    <img src="/s:r/zs_daily.png" alt="Daily Chart - Draw Support and Resistance" class="w-full h-auto object-contain" />
                 </div>
                 <div class="mt-4 flex items-center gap-2 text-slate-400 text-sm">
                     <svg class="w-5 h-5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
@@ -6083,7 +6083,7 @@ export const STRATEGIES: Strategy[] = [
 
                         <!-- Answer Chart with Lines -->
                         <div class="relative rounded-xl overflow-hidden border border-emerald-500/30 bg-black/50">
-                            <img src="/s:r/zs_daily.webp" alt="Answer - Support and Resistance Levels" class="w-full h-auto object-contain" />
+                            <img src="/s:r/zs_daily.png" alt="Answer - Support and Resistance Levels" class="w-full h-auto object-contain" />
                             <!-- Resistance Zone Overlay -->
                             <div class="absolute left-0 right-0 h-[8%] bg-rose-500/20 border-t-2 border-b-2 border-rose-500/60 border-dashed" style="top: 14%;">
                                 <span class="absolute right-2 top-1/2 -translate-y-1/2 text-rose-400 font-bold text-xs uppercase tracking-wider bg-slate-900/80 px-2 py-0.5 rounded">Resistance Zone</span>
@@ -8653,8 +8653,8 @@ export const STRATEGIES: Strategy[] = [
     {
         id: 'strike-expiration',
         name: 'Strike & Expiration Selection',
-        tier: 3,
-        tierName: 'The Anchors',
+        tier: 3.5,
+        tierName: 'Proper Mindset',
         outlook: 'Educational',
         objective: 'Trade Planning',
         risk: 'None',
@@ -9020,8 +9020,8 @@ export const STRATEGIES: Strategy[] = [
     {
         id: 'exit-strategies',
         name: 'Exit Strategies',
-        tier: 3,
-        tierName: 'The Anchors',
+        tier: 3.5,
+        tierName: 'Proper Mindset',
         outlook: 'Educational',
         objective: 'Trade Management',
         risk: 'None',
@@ -9991,8 +9991,8 @@ export const STRATEGIES: Strategy[] = [
     {
         id: 'first-trade',
         name: 'Your First Trade',
-        tier: 3,
-        tierName: 'The Anchors',
+        tier: 3.5,
+        tierName: 'Proper Mindset',
         outlook: 'Educational',
         objective: 'Execution',
         risk: 'None',
@@ -10007,8 +10007,8 @@ export const STRATEGIES: Strategy[] = [
     {
         id: 'patience',
         name: 'Patience',
-        tier: 3,
-        tierName: 'The Anchors',
+        tier: 3.5,
+        tierName: 'Proper Mindset',
         outlook: 'Educational',
         objective: 'Mindset',
         risk: 'None',
@@ -11741,6 +11741,29 @@ export const STRATEGIES: Strategy[] = [
         `, analogy: "Throwing a dart. Highest score at the bullseye. Points decrease as you drift, until you hit the safety net.", nuance: "<b>High Credit:</b> You collect a large credit relative to risk. <br><br><b>Pinning:</b> Market makers often pin stock to strikes at OpEx.", example: "<b>Scenario:</b> <b>UBER</b> is $75. You think it pins here Friday. <br><br><b>The Trade:</b> Sell $75 Call/Put. Buy $80 Call / $70 Put. Credit: $3.50. <br><br><b>Risk:</b> Spread is $5 wide. Credit is $3.50. Max risk is only $1.50! <br><br><b>Reward:</b> If UBER is exactly $75, you keep $350. Almost 2.5x return on risk."
     },
 
+    // Reverse Iron Condor (Long Iron Condor)
+    {
+        id: 'reverse-iron-condor', name: 'Reverse Iron Condor', tier: 5, tierName: 'Volatility', outlook: 'Explosive', objective: 'Long Vol (Defined)', risk: 'Defined', legs: [{ type: 'put', action: 'sell', strikeOffset: -20, quantity: 1 }, { type: 'put', action: 'buy', strikeOffset: -10, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 10, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 20, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(168,85,247,0.05)); border: 1px solid rgba(168,85,247,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #c084fc; margin: 0 0 12px 0; font-size: 1.3em;">🔄 Reverse Iron Condor</h2>
+                <p style="color: #94a3b8; margin: 0;">The mirror image of an Iron Condor — you're <b>buying</b> the wings and <b>selling</b> the body. You profit when the stock makes a big move in either direction.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px; margin-bottom: 16px;">
+                <h3 style="color: #a78bfa; margin: 0 0 8px 0;">How It Works</h3>
+                <p class="text-slate-300">Buy an OTM put spread + buy an OTM call spread. You pay a net debit and need the stock to move beyond one of your long strikes to profit.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #a78bfa; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Defined risk (max loss = net debit paid)</p>
+                <p class="text-slate-300">✅ Profits from big moves in either direction</p>
+                <p class="text-slate-300">⚠️ Time decay works against you</p>
+                <p class="text-slate-300">⚠️ Needs significant move to overcome debit</p>
+            </div>
+        </div>
+        `, analogy: "Like buying earthquake insurance on both sides of a building — you lose the premium if nothing happens, but you're covered if the ground shakes in any direction.", nuance: "<b>Vol Play:</b> Best entered when IV is low and expected to expand. The debit spread structure caps both your risk and reward compared to a long strangle.", example: "<b>Scenario:</b> <b>TSLA</b> at $250 before earnings. <br><br><b>The Trade:</b> Sell $230P, buy $240P, buy $260C, sell $270C. Net debit: $3.00. <br><br><b>Outcome:</b> Max profit $7 if TSLA below $230 or above $270. Max loss $3 if it stays between $240-$260."
+    },
+
     // --- TIER 6: TIME & DIAGONALS ---
     {
         id: 'calendar-spread', name: 'Calendar Spread', tier: 6, tierName: 'Time/Skew', outlook: 'Neutral', objective: 'Theta Arb', risk: 'Defined', legs: [{ type: 'call', action: 'sell', strikeOffset: 0, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 0, quantity: 1 }], analysis: `
@@ -13168,41 +13191,184 @@ export const STRATEGIES: Strategy[] = [
         `, analogy: "A catapult with a counterweight. Moderate wind sends the projectile perfectly. A hurricane sends it right back at you.", nuance: "<b>Two Time Frames:</b> The front-month shorts decay faster than your back-month long. Time works for you initially. <br><br><b>Naked Exposure:</b> Above the short strike, one call is uncovered. Manage or roll before it gets dangerous.", example: "<b>Scenario:</b> <b>PLTR</b> at $25. Bullish, want cheap exposure. <br><br><b>The Trade:</b> Buy 45-day $25C, sell 2x 14-day $27.50C. Debit: $1.50. <br><br><b>Outcome:</b> Best if PLTR at $27-28 at front expiry. Risk if it explodes past $30."
     },
 
-    // --- TIER 8: EVENT HORIZONS ---
+    // --- ADDITIONAL TIER 7: ADVANCED + EXOTIC ---
+
+    // Naked Call
     {
-        id: 'event-horizons-course',
-        name: 'Course Lessons',
-        tier: 8,
-        tierName: 'Event Horizons',
-        outlook: 'Educational',
-        objective: 'Learn Event Trading',
-        risk: 'None',
-        legs: [],
-        hideSimulator: true,
-        hideAnalyst: true,
-        analysis: `<div class="text-center py-12"><p class="text-slate-400">Event Horizons Course - click to open</p></div>`,
-        analogy: "Master event-driven trading with Cameron the Chameleon. 8 comprehensive lessons covering prediction markets, earnings plays, and volatility events.",
-        nuance: "<b>Structured Learning:</b> Progress through 8 lessons with quizzes and case studies. Learn from three expert mentors: Chameleon, Cheetah, and Owl.",
-        example: ""
-    },
-    {
-        id: 'event-horizons',
-        name: 'Event Horizons Tools',
-        tier: 8,
-        tierName: 'Event Horizons',
-        outlook: 'Educational',
-        objective: 'Event Trading Tools',
-        risk: 'None',
-        legs: [],
-        hideSimulator: true,
-        hideAnalyst: true,
-        analysis: `<div class="text-center py-12"><p class="text-slate-400">Event Horizons - click to open</p></div>`,
-        analogy: "Access the Event Horizons toolkit: Prediction Scanner, Gap Analyzer, Event Replay, Paper Trading, and AI Signal Synthesizer.",
-        nuance: "<b>Event-Driven Trading:</b> Combine options knowledge with prediction market signals. Understand IV crush, earnings straddles, and how to position around known catalysts.",
-        example: ""
+        id: 'naked-call', name: 'Naked Call', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Leveraged Directional', outlook: 'Bearish', objective: 'Income (High Risk)', risk: 'Unlimited', legs: [{ type: 'call', action: 'sell', strikeOffset: 10, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(239,68,68,0.05)); border: 1px solid rgba(239,68,68,0.4); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #f87171; margin: 0 0 12px 0; font-size: 1.3em;">⚠️ Naked Call</h2>
+                <p style="color: #94a3b8; margin: 0;">Selling a call without owning the underlying stock. <b style="color: #f87171;">This is one of the highest-risk strategies in options.</b> Unlimited loss potential if the stock rallies.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px; margin-bottom: 16px;">
+                <h3 style="color: #fb923c; margin: 0 0 8px 0;">How It Works</h3>
+                <p class="text-slate-300">You collect premium by selling a call. If the stock stays below the strike, you keep it all. If it rockets higher, your losses are theoretically unlimited.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #fb923c; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Collect premium upfront</p>
+                <p class="text-slate-300">✅ Time decay works in your favor</p>
+                <p class="text-slate-300">🚨 <b>UNLIMITED risk</b> if stock rallies</p>
+                <p class="text-slate-300">🚨 Requires high margin / Level 4+ options approval</p>
+            </div>
+        </div>
+        `, analogy: "Selling fire insurance on someone else's house with no reinsurance. You collect the premium, but if the house burns down, you owe everything.", nuance: "<b>Margin Intensive:</b> Brokers require significant margin. A sharp gap up can cause margin calls. Most professionals use naked calls only on indices or with strict stop-losses. <br><br><b>Why It Exists:</b> Statistically, most OTM calls expire worthless. But the tail risk is catastrophic.", example: "<b>Scenario:</b> <b>SPY</b> at $500. Bearish short-term. <br><br><b>The Trade:</b> Sell $520C for $2.50. <br><br><b>Outcome:</b> Keep $250 if SPY stays below $520. If SPY hits $540, you lose $1,750. No cap on losses."
     },
 
-    // --- TIER 9: STRATEGY TOOLS ---
+    // Naked Put
+    {
+        id: 'naked-put', name: 'Naked Put', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Leveraged Directional', outlook: 'Neutral/Bull', objective: 'Income (High Risk)', risk: 'Significant', legs: [{ type: 'put', action: 'sell', strikeOffset: -10, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(251,146,60,0.15), rgba(251,146,60,0.05)); border: 1px solid rgba(251,146,60,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #fb923c; margin: 0 0 12px 0; font-size: 1.3em;">⚡ Naked Put</h2>
+                <p style="color: #94a3b8; margin: 0;">Selling a put without the cash to fully cover assignment. Similar to a cash-secured put but using margin instead of reserved cash. Higher capital efficiency, higher risk.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #fb923c; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Higher return on capital vs cash-secured puts</p>
+                <p class="text-slate-300">✅ Time decay + falling IV both help</p>
+                <p class="text-slate-300">⚠️ Risk = strike × 100 minus premium (if stock goes to $0)</p>
+                <p class="text-slate-300">⚠️ Margin calls possible in sharp selloffs</p>
+            </div>
+        </div>
+        `, analogy: "Like a cash-secured put that's been hitting the gym — more powerful, more efficient, but can hurt you worse if things go wrong.", nuance: "<b>Key Difference from CSP:</b> A cash-secured put reserves the full assignment cost. A naked put uses margin, freeing capital but adding liquidation risk. Same P&L profile, different risk management.", example: "<b>Scenario:</b> <b>AAPL</b> at $190. Bullish outlook. <br><br><b>The Trade:</b> Sell $180P for $3.00 on margin. <br><br><b>Outcome:</b> Keep $300 if AAPL stays above $180. If assigned, you buy at effective $177. Margin required: ~$3,600 vs $18,000 cash-secured."
+    },
+
+    // Put Front Ratio
+    {
+        id: 'put-front-ratio', name: 'Put Front Ratio (1x2)', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Leveraged Directional', outlook: 'Mild Bear', objective: 'Income', risk: 'Unlimited', legs: [{ type: 'put', action: 'buy', strikeOffset: 0, quantity: 1 }, { type: 'put', action: 'sell', strikeOffset: -10, quantity: 2 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(239,68,68,0.15), rgba(239,68,68,0.05)); border: 1px solid rgba(239,68,68,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #f87171; margin: 0 0 12px 0; font-size: 1.3em;">📉 Put Front Ratio (1x2)</h2>
+                <p style="color: #94a3b8; margin: 0;">Buy 1 ATM put + sell 2 OTM puts. The bear-side mirror of the Call Front Ratio. Profits from a moderate decline to the short strike, but has unlimited downside risk if the stock crashes.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #f87171; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Often entered for a net credit or small debit</p>
+                <p class="text-slate-300">✅ Max profit at short strike at expiration</p>
+                <p class="text-slate-300">⚠️ Unlimited risk below the lower breakeven</p>
+                <p class="text-slate-300">⚠️ One put is naked — requires margin approval</p>
+            </div>
+        </div>
+        `, analogy: "A ski slope with a cliff at the bottom. Gentle decline is profitable. Too steep and you go off the edge.", nuance: "<b>Mirror of Call Ratio:</b> Same structure, opposite direction. Max profit when stock settles at the short strikes. Popular before earnings when IV is high (sell expensive OTM puts). <br><br><b>Risk Management:</b> Close or roll if the stock drops past the short strikes.", example: "<b>Scenario:</b> <b>AMZN</b> at $200. Expecting mild pullback. <br><br><b>The Trade:</b> Buy 1 $200P, sell 2 $190P. Net credit: $1.00. <br><br><b>Outcome:</b> Max profit $11 if AMZN at $190 at expiry. Breakeven at $179. Unlimited risk below $179."
+    },
+
+    // Risk Reversal
+    {
+        id: 'risk-reversal', name: 'Risk Reversal', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Leveraged Directional', outlook: 'Bullish', objective: 'Synthetic Directional', risk: 'Significant', legs: [{ type: 'put', action: 'sell', strikeOffset: -10, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 10, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #34d399; margin: 0 0 12px 0; font-size: 1.3em;">🔀 Risk Reversal</h2>
+                <p style="color: #94a3b8; margin: 0;">Sell an OTM put to finance buying an OTM call. A directional bet that can often be done for zero cost. Like a synthetic long stock with a dead zone in the middle.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #34d399; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Often zero or near-zero cost entry</p>
+                <p class="text-slate-300">✅ Unlimited upside above call strike</p>
+                <p class="text-slate-300">⚠️ Significant downside below put strike (like owning stock)</p>
+                <p class="text-slate-300">💡 Popular with hedge funds for directional bets</p>
+            </div>
+        </div>
+        `, analogy: "Borrowing from one pocket to fill the other. The put premium pays for the call. You get free upside exposure but accept downside obligation.", nuance: "<b>Skew Play:</b> Often used when put IV is higher than call IV (typical in equities). You sell expensive puts and buy cheaper calls. <br><br><b>Vs Synthetic:</b> A synthetic future uses ATM options. A risk reversal uses OTM options, creating a neutral zone.", example: "<b>Scenario:</b> <b>META</b> at $500. Bullish. <br><br><b>The Trade:</b> Sell $480P, buy $520C. Net cost: $0.50. <br><br><b>Outcome:</b> Above $520.50: profit like owning stock. Between $480-$520: lose only $50. Below $480: lose like stock ownership."
+    },
+
+    // Short Call Butterfly
+    {
+        id: 'short-call-butterfly', name: 'Short Call Butterfly', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Exotic Volatility', outlook: 'Volatile', objective: 'Vol Bet', risk: 'Defined', legs: [{ type: 'call', action: 'sell', strikeOffset: -5, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 0, quantity: 2 }, { type: 'call', action: 'sell', strikeOffset: 5, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(168,85,247,0.05)); border: 1px solid rgba(168,85,247,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #c084fc; margin: 0 0 12px 0; font-size: 1.3em;">🦋 Short Call Butterfly</h2>
+                <p style="color: #94a3b8; margin: 0;">The inverse of a Long Call Butterfly. You <b>collect</b> a credit and profit if the stock moves significantly away from the center strike in either direction.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #c084fc; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Net credit received</p>
+                <p class="text-slate-300">✅ Max profit = credit received (if stock far from center)</p>
+                <p class="text-slate-300">⚠️ Max loss at center strike at expiration</p>
+                <p class="text-slate-300">💡 Bet that the stock will NOT pin at a specific price</p>
+            </div>
+        </div>
+        `, analogy: "Betting against a dart hitting the bullseye. You win if it lands anywhere except dead center.", nuance: "<b>Low Risk/Reward:</b> Small credit collected, small max loss. The inverse butterfly is rarely traded directly — more commonly used as an adjustment. <br><br><b>When to Use:</b> Expecting a move but unsure of direction. Limited capital at risk.", example: "<b>Scenario:</b> <b>NVDA</b> at $800. Expecting a big move. <br><br><b>The Trade:</b> Sell $795C, buy 2x $800C, sell $805C. Credit: $1.50. <br><br><b>Outcome:</b> Keep $150 if NVDA moves away from $800. Max loss $350 if pinned at exactly $800."
+    },
+
+    // Short Put Butterfly
+    {
+        id: 'short-put-butterfly', name: 'Short Put Butterfly', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Exotic Volatility', outlook: 'Volatile', objective: 'Vol Bet', risk: 'Defined', legs: [{ type: 'put', action: 'sell', strikeOffset: 5, quantity: 1 }, { type: 'put', action: 'buy', strikeOffset: 0, quantity: 2 }, { type: 'put', action: 'sell', strikeOffset: -5, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(168,85,247,0.05)); border: 1px solid rgba(168,85,247,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #c084fc; margin: 0 0 12px 0; font-size: 1.3em;">🦋 Short Put Butterfly</h2>
+                <p style="color: #94a3b8; margin: 0;">The put-side inverse butterfly. Collect a credit and profit when the stock moves significantly away from the center strike. Same structure as the short call butterfly but built with puts.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #c084fc; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Net credit received</p>
+                <p class="text-slate-300">✅ Profits from movement away from center strike</p>
+                <p class="text-slate-300">⚠️ Max loss at center strike</p>
+                <p class="text-slate-300">💡 Put-call parity: equivalent payoff to short call butterfly</p>
+            </div>
+        </div>
+        `, analogy: "Same dart-missing-bullseye bet, just using a different set of darts (puts instead of calls).", nuance: "<b>Parity:</b> Theoretically identical payoff to the short call butterfly at the same strikes. Choice between puts/calls often depends on liquidity and skew pricing.", example: "<b>Scenario:</b> <b>GOOGL</b> at $175. <br><br><b>The Trade:</b> Sell $180P, buy 2x $175P, sell $170P. Credit: $1.20. <br><br><b>Outcome:</b> Keep $120 if GOOGL moves away from $175. Max loss $380 if pinned at $175."
+    },
+
+    // Christmas Tree Butterfly
+    {
+        id: 'christmas-tree-butterfly', name: 'Christmas Tree Butterfly', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Precision Income', outlook: 'Mild Bull', objective: 'Precision Targeting', risk: 'Defined', legs: [{ type: 'call', action: 'buy', strikeOffset: 0, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 5, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 10, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 15, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #34d399; margin: 0 0 12px 0; font-size: 1.3em;">🎄 Christmas Tree Butterfly</h2>
+                <p style="color: #94a3b8; margin: 0;">A modified butterfly with unequally spaced strikes. Like a broken wing butterfly but with the short strikes at different distances from the long. Named because the payoff diagram looks like a tree.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #34d399; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Low cost entry (small debit)</p>
+                <p class="text-slate-300">✅ Wider profit zone than standard butterfly</p>
+                <p class="text-slate-300">⚠️ Max loss = net debit paid</p>
+                <p class="text-slate-300">💡 Directional bias built into the structure</p>
+            </div>
+        </div>
+        `, analogy: "A Christmas tree shape — wide at the base, narrowing to a peak. The profit zone is wider on one side, tapering off.", nuance: "<b>Vs Standard Butterfly:</b> The asymmetric spacing gives you a directional lean. The Christmas tree is essentially a 1x1x1x1 spread (unlike the 1x2x1 standard butterfly). <br><br><b>Flexibility:</b> Adjust strike spacing to control how directional and how wide your profit zone is.", example: "<b>Scenario:</b> <b>MSFT</b> at $400. Mildly bullish. <br><br><b>The Trade:</b> Buy $400C, sell $405C, sell $410C, buy $415C. Debit: $1.50. <br><br><b>Outcome:</b> Max profit ~$3.50 if MSFT between $405-$410. Max loss $1.50."
+    },
+
+    // Box Spread
+    {
+        id: 'box-spread', name: 'Box Spread', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Precision Income', outlook: 'Neutral', objective: 'Arbitrage', risk: 'Defined', legs: [{ type: 'call', action: 'buy', strikeOffset: -5, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 5, quantity: 1 }, { type: 'put', action: 'buy', strikeOffset: 5, quantity: 1 }, { type: 'put', action: 'sell', strikeOffset: -5, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.05)); border: 1px solid rgba(59,130,246,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #60a5fa; margin: 0 0 12px 0; font-size: 1.3em;">📦 Box Spread</h2>
+                <p style="color: #94a3b8; margin: 0;">A combination of a bull call spread and a bear put spread at the same strikes. The result is a position that's worth exactly the width of the strikes at expiration, regardless of stock price. Used for arbitrage and synthetic lending/borrowing.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #60a5fa; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Guaranteed value at expiration (strike width × 100)</p>
+                <p class="text-slate-300">✅ No directional risk — pure interest rate play</p>
+                <p class="text-slate-300">⚠️ Profit only if bought below theoretical value</p>
+                <p class="text-slate-300">💡 Used by institutions as a financing tool</p>
+            </div>
+        </div>
+        `, analogy: "Like buying a bond. You pay X today and receive a guaranteed amount at expiration. The 'interest rate' is implied by the pricing.", nuance: "<b>Not for Retail:</b> Box spreads require European-style options (SPX) to avoid early assignment risk. The famous 'GUH' story on Reddit involved box spreads on American-style options gone wrong. <br><br><b>Practical Use:</b> Institutions use box spreads to borrow/lend at implied rates, often cheaper than traditional financing.", example: "<b>Scenario:</b> <b>SPX</b> $5-wide box. Strikes: 5000/5005. <br><br><b>The Trade:</b> Buy $5000C, sell $5005C, buy $5005P, sell $5000P. Cost: $4.95. <br><br><b>Outcome:</b> Worth exactly $5.00 at expiration. Profit: $0.05 (≈1% risk-free return)."
+    },
+
+    // Iron Albatross
+    {
+        id: 'iron-albatross', name: 'Iron Albatross', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Precision Income', outlook: 'Neutral', objective: 'Income (Wide Range)', risk: 'Defined', legs: [{ type: 'put', action: 'buy', strikeOffset: -30, quantity: 1 }, { type: 'put', action: 'sell', strikeOffset: -5, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 5, quantity: 1 }, { type: 'call', action: 'buy', strikeOffset: 30, quantity: 1 }], analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(14,165,233,0.15), rgba(14,165,233,0.05)); border: 1px solid rgba(14,165,233,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #38bdf8; margin: 0 0 12px 0; font-size: 1.3em;">🦅 Iron Albatross</h2>
+                <p style="color: #94a3b8; margin: 0;">A wide iron butterfly — selling ATM (or near-ATM) puts and calls with far OTM protective wings. Larger credit than a standard iron condor but with more risk. Named for the albatross's massive wingspan.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #38bdf8; margin: 0 0 8px 0;">Key Points</h3>
+                <p class="text-slate-300">✅ Large premium collected</p>
+                <p class="text-slate-300">✅ High probability of partial profit</p>
+                <p class="text-slate-300">⚠️ Wide wings = large max loss if breached</p>
+                <p class="text-slate-300">💡 Essentially a short straddle with distant crash protection</p>
+            </div>
+        </div>
+        `, analogy: "An albatross glides effortlessly with its enormous wingspan — steady income in calm skies. But that wide wingspan catches more turbulence when storms hit.", nuance: "<b>Vs Iron Condor:</b> Wider short strikes (closer to ATM) = more premium but bigger risk. Vs Iron Butterfly: The long wings are further OTM, so you keep more of the credit but accept larger max loss. <br><br><b>Position Sizing:</b> Because of the wide wings, size this smaller than a standard iron condor.", example: "<b>Scenario:</b> <b>SPY</b> at $500. Neutral outlook. <br><br><b>The Trade:</b> Buy $470P, sell $495P, sell $505C, buy $530C. Credit: $8.50. <br><br><b>Outcome:</b> Keep $850 if SPY stays between $495-$505. Max loss ~$1,650 per side."
+    },
+
+        // --- TIER 9: STRATEGY TOOLS ---
     {
         id: 'strategy-builder',
         name: 'Strategy Lab',
@@ -13235,6 +13401,74 @@ export const STRATEGIES: Strategy[] = [
         `,
         analogy: "A trading architect's workshop. Build custom strategies leg by leg, compare them side-by-side, and see how each decision changes the payoff landscape.",
         nuance: "<b>Build & Compare:</b> Construct your own multi-leg strategies and instantly compare them. See how each leg affects the payoff diagram in real-time. The right strategy for the wrong situation is the wrong strategy—the Lab helps you find the perfect match.",
+        example: ""
+    },
+    // Event Horizons (moved here, between Strategy Lab and Paper Trading)
+    {
+        id: 'event-horizons-course',
+        name: 'Event Horizon Prediction Markets',
+        tier: 9,
+        tierName: 'Strategy Tools',
+        outlook: 'Educational',
+        objective: 'Learn Event Trading',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Event Horizons Course - click to open</p></div>`,
+        analogy: "Master event-driven trading with Cameron the Chameleon. 8 comprehensive lessons covering prediction markets, earnings plays, and volatility events.",
+        nuance: "<b>Structured Learning:</b> Progress through 8 lessons with quizzes and case studies. Learn from three expert mentors: Chameleon, Cheetah, and Owl.",
+        example: ""
+    },
+    {
+        id: 'event-horizons',
+        name: 'Event Horizons Tools',
+        tier: 9,
+        tierName: 'Strategy Tools',
+        outlook: 'Educational',
+        objective: 'Event Trading Tools',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Event Horizons - click to open</p></div>`,
+        analogy: "Access the Event Horizons toolkit: Prediction Scanner, Gap Analyzer, Event Replay, Paper Trading, and AI Signal Synthesizer.",
+        nuance: "<b>Event-Driven Trading:</b> Combine options knowledge with prediction market signals. Understand IV crush, earnings straddles, and how to position around known catalysts.",
+        example: ""
+    },
+    {
+        id: 'options-flow',
+        name: 'Options Flow',
+        tier: 9,
+        tierName: 'Strategy Tools',
+        outlook: 'Educational',
+        objective: 'Order Flow Analysis',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `
+        <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
+            <div style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+                <h2 style="color: #34d399; margin: 0 0 12px 0; font-size: 1.3em;">🌊 Options Flow</h2>
+                <p style="color: #94a3b8; margin: 0;">Track unusual options activity in real time. See what the big players are doing — large block trades, sweeps, and institutional positioning that can signal where smart money is headed.</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px; margin-bottom: 16px;">
+                <h3 style="color: #34d399; margin: 0 0 8px 0;">What You'll See</h3>
+                <p class="text-slate-300">📊 <b>Unusual Volume:</b> Options trading at multiples of normal volume</p>
+                <p class="text-slate-300">🐋 <b>Block Trades:</b> Large institutional orders that hit the tape</p>
+                <p class="text-slate-300">⚡ <b>Sweeps:</b> Aggressive orders that sweep across multiple exchanges</p>
+                <p class="text-slate-300">📈 <b>Put/Call Ratio:</b> Sentiment shifts in real time</p>
+            </div>
+            <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(51,65,85,0.5); border-radius: 12px; padding: 20px;">
+                <h3 style="color: #34d399; margin: 0 0 8px 0;">How to Use It</h3>
+                <p class="text-slate-300">🔍 Follow the flow, don't fight it. When you see massive call sweeps on a stock you're already bullish on, that's confirmation. When you see heavy put buying before earnings, that's a warning.</p>
+                <p class="text-slate-300 mt-2">⚠️ <b>Important:</b> Flow is one signal, not the whole picture. Combine it with your own analysis — the smart money isn't always right, and not every big trade is directional.</p>
+            </div>
+        </div>
+        `,
+        analogy: "Like watching footprints in the snow — you can't see the hikers, but you can see where they've been and which direction they're heading. Options flow shows you where the money is moving.",
+        nuance: "<b>Reading the Tape:</b> Not all large trades are bullish/bearish bets. Some are hedges, rolls, or spread legs. Context matters. A big put buy might be insurance, not a bearish bet. Look at the premium paid, the expiration, and whether it was bought or sold.",
         example: ""
     },
     {
@@ -13270,23 +13504,109 @@ export const STRATEGIES: Strategy[] = [
         nuance: "<b>Risk-Free Learning:</b> Make mistakes with fake money. Track your wins and losses. Build confidence before risking real capital.",
         example: ""
     },
+    // --- TIER 9 ADDITIONS: TOOLS FROM DESKTOP ---
     {
-        id: 'encyclopedia',
-        name: 'Options Encyclopedia',
+        id: 'greeks-visualizer',
+        name: 'Greeks Visualizer',
         tier: 9,
         tierName: 'Strategy Tools',
         outlook: 'Educational',
-        objective: 'Reference',
+        objective: 'Interactive Greeks Explorer',
         risk: 'None',
         legs: [],
         hideSimulator: true,
         hideAnalyst: true,
-        analysis: `<div class="text-center py-12"><p class="text-slate-400">Encyclopedia Loading...</p></div>`,
-        analogy: "The complete taxonomy of trading strategies.",
-        nuance: "<b>Reference:</b> 58 strategies mapped and detailed.",
+        analysis: `
+        <div style="padding: 20px;">
+            <h2 style="color: #39ff14; margin-bottom: 16px;">📊 Greeks Visualizer</h2>
+            <p style="color: #a1a1aa; margin-bottom: 16px;">Explore how Delta, Gamma, Theta, and Vega change across strike prices, time to expiration, and volatility levels.</p>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+                <h3 style="color: #fbbf24; font-size: 14px; margin-bottom: 8px;">🔬 What You'll Learn</h3>
+                <ul style="color: #d4d4d8; font-size: 13px; line-height: 1.8;">
+                    <li><b>Delta:</b> How much the option price moves per $1 stock move</li>
+                    <li><b>Gamma:</b> How fast Delta changes — the acceleration</li>
+                    <li><b>Theta:</b> Time decay — how much value you lose each day</li>
+                    <li><b>Vega:</b> Sensitivity to volatility changes</li>
+                </ul>
+            </div>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px;">
+                <h3 style="color: #22c55e; font-size: 14px; margin-bottom: 8px;">💡 Key Insight</h3>
+                <p style="color: #a1a1aa; font-size: 13px;">Greeks aren't static numbers — they change constantly as price, time, and volatility shift. Understanding their dynamics is what separates beginners from professionals.</p>
+            </div>
+        </div>`,
+        analogy: "Think of the Greeks as your instrument panel in a cockpit. Delta is your speedometer, Gamma is your acceleration, Theta is your fuel gauge burning down, and Vega is your altitude sensitivity to turbulence.",
+        nuance: "<b>The Greeks Interact:</b> Delta changes because of Gamma. Theta accelerates near expiration. Vega matters most when IV is low. Understanding these relationships is the key to managing complex positions.",
         example: ""
     },
-
+    {
+        id: 'strategy-comparison',
+        name: 'Strategy Comparison',
+        tier: 9,
+        tierName: 'Strategy Tools',
+        outlook: 'Educational',
+        objective: 'Compare Strategies Side-by-Side',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `
+        <div style="padding: 20px;">
+            <h2 style="color: #39ff14; margin-bottom: 16px;">⚔️ Strategy Comparison Matrix</h2>
+            <p style="color: #a1a1aa; margin-bottom: 16px;">Compare options strategies side-by-side to find the best fit for your market outlook and risk tolerance.</p>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+                <h3 style="color: #fbbf24; font-size: 14px; margin-bottom: 8px;">📋 Compare By</h3>
+                <ul style="color: #d4d4d8; font-size: 13px; line-height: 1.8;">
+                    <li><b>Risk/Reward Profile:</b> Max gain vs max loss</li>
+                    <li><b>Capital Required:</b> Margin and buying power impact</li>
+                    <li><b>Market Outlook:</b> Bullish, bearish, or neutral</li>
+                    <li><b>Volatility Bias:</b> Long vol, short vol, or neutral</li>
+                    <li><b>Time Decay:</b> Theta positive or negative</li>
+                    <li><b>Complexity:</b> Number of legs and management required</li>
+                </ul>
+            </div>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px;">
+                <h3 style="color: #22c55e; font-size: 14px; margin-bottom: 8px;">💡 When to Use</h3>
+                <p style="color: #a1a1aa; font-size: 13px;">Can't decide between an iron condor and a butterfly? Use the comparison tool to see which strategy better matches your thesis, risk budget, and management style.</p>
+            </div>
+        </div>`,
+        analogy: "Like test-driving two cars before buying. You wouldn't buy a pickup truck for drag racing or a sports car for hauling lumber. Match the strategy to the job.",
+        nuance: "<b>Context Matters:</b> The 'best' strategy depends on your outlook, risk tolerance, account size, and time commitment. There's no universal winner — only the right tool for the right situation.",
+        example: ""
+    },
+    {
+        id: 'watchlist',
+        name: 'Watchlist',
+        tier: 9,
+        tierName: 'Strategy Tools',
+        outlook: 'Educational',
+        objective: 'Track Your Tickers',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `
+        <div style="padding: 20px;">
+            <h2 style="color: #39ff14; margin-bottom: 16px;">👀 Watchlist</h2>
+            <p style="color: #a1a1aa; margin-bottom: 16px;">Build and manage your personal watchlist of stocks and ETFs you're tracking for options trades.</p>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+                <h3 style="color: #fbbf24; font-size: 14px; margin-bottom: 8px;">📌 Track These Metrics</h3>
+                <ul style="color: #d4d4d8; font-size: 13px; line-height: 1.8;">
+                    <li><b>IV Rank & IV Percentile:</b> Is volatility high or low historically?</li>
+                    <li><b>Upcoming Earnings:</b> When is the next catalyst?</li>
+                    <li><b>Price Action:</b> Support/resistance levels, trend direction</li>
+                    <li><b>Option Volume:</b> Where is smart money positioning?</li>
+                    <li><b>Sector Correlation:</b> How does it move with the market?</li>
+                </ul>
+            </div>
+            <div style="background: #0a0a0a; border: 1px solid rgba(57,255,20,0.2); border-radius: 12px; padding: 16px;">
+                <h3 style="color: #22c55e; font-size: 14px; margin-bottom: 8px;">💡 Pro Tip</h3>
+                <p style="color: #a1a1aa; font-size: 13px;">Keep your watchlist focused — 10-15 names max. Know them deeply rather than tracking 100 tickers superficially. The best traders are specialists, not generalists.</p>
+            </div>
+        </div>`,
+        analogy: "Your watchlist is your hunting ground. The best predators don't chase every animal in the jungle — they study a few prey deeply and strike when conditions are perfect.",
+        nuance: "<b>Quality Over Quantity:</b> A focused watchlist with deep knowledge of each name beats a massive list you barely follow. Know the earnings dates, IV patterns, and support levels of your watchlist stocks.",
+        example: ""
+    },
     // --- TIER 10: LET'S PLAY ---
     {
         id: 'leaderboard',

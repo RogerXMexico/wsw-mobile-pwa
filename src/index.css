@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  background-color: #020617;
+  background-color: #000000;
   color: white;
   font-family: system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -142,6 +142,67 @@ body {
 }
 .strategy-content .drop-shadow-\[0_0_8px_rgba\(255\,0\,153\,0\.8\)\] {
   filter: drop-shadow(0 0 8px rgba(255, 0, 153, 0.8));
+}
+
+/* ── Simulator range sliders ── */
+.sim-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: #27272a;
+  outline: none;
+}
+
+.sim-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #39ff14;
+  border: 2px solid #000;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+  /* ensure 44px min touch target via padding */
+  touch-action: pan-x;
+}
+
+.sim-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #39ff14;
+  border: 2px solid #000;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+/* Purple variant (IV) */
+.sim-slider-purple::-webkit-slider-thumb {
+  background: #a855f7;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+}
+.sim-slider-purple::-moz-range-thumb {
+  background: #a855f7;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+}
+
+/* Cyan variant (DTE) */
+.sim-slider-cyan::-webkit-slider-thumb {
+  background: #22d3ee;
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+.sim-slider-cyan::-moz-range-thumb {
+  background: #22d3ee;
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+
+/* Track fill styling (WebKit) */
+.sim-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: #27272a;
 }
 
 /* Safe area padding for bottom nav */

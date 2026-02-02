@@ -30,6 +30,11 @@ export type JungleViewMode =
   | 'strategy-lesson'
   | 'leaderboard'
   | 'badges'
+  | 'mentors'
+  | 'daily-missions'
+  | 'jungle-tribes'
+  | 'trading-feed'
+  | 'challenge-paths'
   | 'profile';
 
 // ============ Animal Definitions ============

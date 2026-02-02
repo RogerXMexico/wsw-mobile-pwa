@@ -48,6 +48,13 @@ export const RULES_SECTIONS: Section[] = [
 
 export const STRATEGY_SECTIONS: Section[] = [
   {
+    id: 'mindset',
+    title: 'Proper Mindset',
+    emoji: '🧠',
+    description: 'Strike selection, exits, your first trade, and the art of patience.',
+    tiers: [3.5],
+  },
+  {
     id: 'anchors',
     title: 'Core Strategies',
     emoji: '⚓',
@@ -117,8 +124,8 @@ export function getStrategiesForTier(tier: number) {
 }
 
 export function getAllTradingStrategies() {
-  // Tiers 3-7: all actual trading strategies for the encyclopedia
-  return STRATEGIES.filter(s => [3, 3.5, 4, 5, 6, 7, 8].includes(s.tier));
+  // Tiers 3-7: actual trading strategies for the encyclopedia (excludes 3.5 Proper Mindset)
+  return STRATEGIES.filter(s => [3, 4, 5, 6, 7].includes(s.tier));
 }
 
 export function getTierInfo(tier: number) {

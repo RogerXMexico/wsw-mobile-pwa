@@ -1,5 +1,15 @@
-import { STRATEGIES } from '../data/strategies';
+import { getStrategiesForTiers, getAllTradingStrategiesLazy, getAllStrategiesLazy } from '../data/strategies';
 import { TIER_INFO } from '../data/tierInfo';
+import { Strategy } from '../types';
+
+// Cache for sync functions (populated lazily)
+let _strategiesCache: Strategy[] | null = null;
+const getStrategiesCache = async (): Promise<Strategy[]> => {
+    if (!_strategiesCache) {
+        _strategiesCache = await getAllStrategiesLazy();
+    }
+    return _strategiesCache;
+};
 
 // ============ TAB 1: RULES OF THE JUNGLE ============
 // Educational foundations — learn before you trade
@@ -115,17 +125,20 @@ export const SOCIAL_SECTION: Section = {
 
 // ============ HELPERS ============
 
-export function getStrategiesForSection(section: Section) {
-  return STRATEGIES.filter(s => section.tiers.includes(s.tier));
+// DEPRECATED sync versions - use lazy versions instead
+export function getStrategiesForSection(section: Section): Strategy[] {
+  console.warn('[DEPRECATED] getStrategiesForSection - use getStrategiesForSectionLazy');
+  return _strategiesCache?.filter(s => section.tiers.includes(s.tier)) || [];
 }
 
-export function getStrategiesForTier(tier: number) {
-  return STRATEGIES.filter(s => s.tier === tier);
+export function getStrategiesForTier(tier: number): Strategy[] {
+  console.warn('[DEPRECATED] getStrategiesForTier - use getStrategiesByTier from strategies');
+  return _strategiesCache?.filter(s => s.tier === tier) || [];
 }
 
-export function getAllTradingStrategies() {
-  // Tiers 3-7: actual trading strategies for the encyclopedia (excludes 3.5 Proper Mindset)
-  return STRATEGIES.filter(s => [3, 4, 5, 6, 7].includes(s.tier));
+export function getAllTradingStrategies(): Strategy[] {
+  console.warn('[DEPRECATED] getAllTradingStrategies - use getAllTradingStrategiesLazyFromCurriculum');
+  return _strategiesCache?.filter(s => [3, 4, 5, 6, 7].includes(s.tier)) || [];
 }
 
 export function getTierInfo(tier: number) {
@@ -162,4 +175,14 @@ export function getTierBadgeColor(tier: number): string {
   };
   const info = getTierInfo(tier);
   return colors[info?.color || 'slate'] || colors.slate;
+}
+
+// ============ LAZY LOADING VERSIONS ============
+
+export async function getStrategiesForSectionLazy(section: Section): Promise<Strategy[]> {
+  return getStrategiesForTiers(section.tiers);
+}
+
+export async function getAllTradingStrategiesLazyFromCurriculum(): Promise<Strategy[]> {
+  return getAllTradingStrategiesLazy();
 }

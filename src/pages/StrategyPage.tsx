@@ -1,7 +1,8 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Check, BookOpen, GraduationCap, Bookmark, ChevronDown, ChevronUp, Loader2, ArrowRight } from 'lucide-react';
-import { STRATEGIES } from '../data/strategies';
+import { getStrategyById, getStrategiesByTier } from '../data/strategies';
+import { Strategy } from '../types';
 import { OptionLeg } from '../types';
 import { useProgress } from '../contexts/ProgressContext';
 import { getTierInfo, getTierBadgeColor } from '../utils/curriculum';
@@ -116,6 +117,29 @@ export default function StrategyPage() {
   const { toggle: toggleBookmark, isBookmarked } = useBookmarks();
 
   const [showQuiz, setShowQuiz] = useState(false);
+  
+  // Strategy loading state (lazy load)
+  const [strategy, setStrategy] = useState<Strategy | null>(null);
+  const [relatedStrategies, setRelatedStrategies] = useState<Strategy[]>([]);
+  const [strategyLoading, setStrategyLoading] = useState(true);
+  
+  // Load strategy on mount or when ID changes
+  useEffect(() => {
+    if (!strategyId) return;
+    
+    setStrategyLoading(true);
+    getStrategyById(strategyId).then(async (s) => {
+      setStrategy(s || null);
+      
+      // Load related strategies from the same tier
+      if (s) {
+        const tierStrategies = await getStrategiesByTier(s.tier);
+        setRelatedStrategies(tierStrategies.filter(rel => rel.id !== s.id).slice(0, 4));
+      }
+      
+      setStrategyLoading(false);
+    });
+  }, [strategyId]);
 
   // Live Market Data state
   const [ticker, setTicker] = useState('SPY');
@@ -212,7 +236,16 @@ export default function StrategyPage() {
     loadChain(ticker.trim().toUpperCase(), exp);
   };
 
-  const strategy = STRATEGIES.find((s) => s.id === strategyId);
+  // Loading state
+  if (strategyLoading) {
+    return (
+      <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4 text-white">
+        <Loader2 className="w-8 h-8 text-[#39ff14] animate-spin" />
+        <p className="text-zinc-400">Loading strategy...</p>
+      </div>
+    );
+  }
+  
   if (!strategy) {
     return (
       <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4 text-white">
@@ -798,37 +831,31 @@ export default function StrategyPage() {
       )}
 
       {/* Related Strategies */}
-      {(() => {
-        const related = STRATEGIES.filter(
-          (s) => s.tier === strategy.tier && s.id !== strategy.id
-        ).slice(0, 4);
-        if (related.length === 0) return null;
-        return (
-          <div className="px-4 mb-6">
-            <h3 className="text-sm font-bold text-zinc-400 uppercase mb-3">Related Strategies</h3>
-            <div className="space-y-2">
-              {related.map((rel) => (
-                <button
-                  key={rel.id}
-                  onClick={() => navigate(`/strategy/${rel.id}`)}
-                  className="w-full flex items-center justify-between bg-[#0a0a0a] border border-[#39ff14]/20 rounded-xl p-3 min-h-[44px] active:scale-[0.98] transition-transform text-left"
-                >
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-bold text-white truncate">{rel.name}</p>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-[10px] text-zinc-500">{rel.outlook}</span>
-                      {rel.risk && rel.risk !== 'None' && (
-                        <span className="text-[10px] text-zinc-600">• {rel.risk}</span>
-                      )}
-                    </div>
+      {relatedStrategies.length > 0 && (
+        <div className="px-4 mb-6">
+          <h3 className="text-sm font-bold text-zinc-400 uppercase mb-3">Related Strategies</h3>
+          <div className="space-y-2">
+            {relatedStrategies.map((rel) => (
+              <button
+                key={rel.id}
+                onClick={() => navigate(`/strategy/${rel.id}`)}
+                className="w-full flex items-center justify-between bg-[#0a0a0a] border border-[#39ff14]/20 rounded-xl p-3 min-h-[44px] active:scale-[0.98] transition-transform text-left"
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-bold text-white truncate">{rel.name}</p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="text-[10px] text-zinc-500">{rel.outlook}</span>
+                    {rel.risk && rel.risk !== 'None' && (
+                      <span className="text-[10px] text-zinc-600">• {rel.risk}</span>
+                    )}
                   </div>
-                  <ArrowRight className="w-4 h-4 text-[#39ff14] flex-shrink-0 ml-2" />
-                </button>
-              ))}
-            </div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-[#39ff14] flex-shrink-0 ml-2" />
+              </button>
+            ))}
           </div>
-        );
-      })()}
+        </div>
+      )}
 
       {/* Quiz button — only for tiers with quiz questions */}
       {(() => {

@@ -15,7 +15,7 @@ const PATHS = [
     id: 'directional',
     name: 'Directional Trader',
     emoji: '🎯',
-    color: '#3b82f6',
+    color: '#22d3ee',
     desc: 'Learn to profit from big moves',
     steps: ['Long Calls/Puts', 'Vertical Spreads', 'Backspreads', 'Synthetic Futures', 'LEAPS'],
     completed: 0,

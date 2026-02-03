@@ -497,7 +497,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
                 <div class="shrink-0 relative group">
                     <div class="w-56 h-56 rounded-full border-4 border-emerald-500 overflow-hidden bg-black/60 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
-                        <img src="/assets/Krzysztof_Monkey_Cute.png" alt="Monkey with Bananas" class="w-full h-full object-cover" />
+                        <img src="/assets/Krzysztof_Monkey_Cute.webp" alt="Monkey with Bananas" class="w-full h-full object-cover" />
                     </div>
                 </div>
                 <div class="text-center md:text-left">
@@ -638,8 +638,8 @@ export const STRATEGIES: Strategy[] = [
                         <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">Expiration</div>
                         <p class="text-xs text-slate-400 mt-2 leading-relaxed">The time left before the contract dies.</p>
                     </div>
-                    <div class="anatomy-number text-center p-4 rounded-2xl transition-all duration-300 cursor-pointer" data-color="blue">
-                        <div class="anatomy-value text-blue-400 font-black text-3xl mb-2 transition-all duration-300">NVDA</div>
+                    <div class="anatomy-number text-center p-4 rounded-2xl transition-all duration-300 cursor-pointer" data-color="cyan">
+                        <div class="anatomy-value text-cyan-400 font-black text-3xl mb-2 transition-all duration-300">NVDA</div>
                         <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">Underlying</div>
                         <p class="text-xs text-slate-400 mt-2 leading-relaxed">The actual asset the option tracks.</p>
                     </div>
@@ -647,28 +647,28 @@ export const STRATEGIES: Strategy[] = [
             </div>
 
             <!-- Know Your Underlying -->
-            <div class="know-underlying-pane relative bg-gradient-to-br from-blue-950/40 via-slate-900 to-indigo-950/30 border-2 border-blue-500/30 p-8 rounded-[2rem] overflow-hidden transition-all duration-300 cursor-pointer">
-                <div class="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <div class="know-underlying-pane relative bg-gradient-to-br from-cyan-950/40 via-slate-900 to-indigo-950/30 border-2 border-cyan-500/30 p-8 rounded-[2rem] overflow-hidden transition-all duration-300 cursor-pointer">
+                <div class="absolute top-0 right-0 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div class="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
                 <div class="relative z-10">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-                            <svg class="w-7 h-7 text-blue-400" style="filter: drop-shadow(0 0 8px rgba(59,130,246,0.6))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center">
+                            <svg class="w-7 h-7 text-cyan-400" style="filter: drop-shadow(0 0 8px rgba(34,211,238,0.6))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                                 <path d="M6 8h2M6 12h2M6 16h2M16 8h2M16 12h2M16 16h2"/>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-black text-blue-400 uppercase tracking-wide">Know Your Underlying</h3>
+                            <h3 class="text-xl font-black text-cyan-400 uppercase tracking-wide">Know Your Underlying</h3>
                             <p class="text-xs text-slate-400 font-mono">The Foundation of Every Options Trade</p>
                         </div>
                     </div>
 
-                    <div class="bg-black/30 border border-blue-500/20 rounded-2xl p-6 mb-6">
+                    <div class="bg-black/30 border border-cyan-500/20 rounded-2xl p-6 mb-6">
                         <p class="text-lg text-white leading-relaxed mb-4">
-                            <span class="text-blue-400 font-bold text-2xl">"</span>An option is only as good as the company beneath it.<span class="text-blue-400 font-bold text-2xl">"</span>
+                            <span class="text-cyan-400 font-bold text-2xl">"</span>An option is only as good as the company beneath it.<span class="text-cyan-400 font-bold text-2xl">"</span>
                         </p>
                         <p class="text-slate-300 text-sm leading-relaxed">
                             Before you ever buy or sell an option, you must <span class="text-white font-bold">deeply understand the underlying company</span>. Options amplify everything—gains, losses, and especially <span class="text-rose-400 font-semibold">ignorance</span>. Trading options on a stock you don't understand is like betting on a horse you've never seen run.
@@ -681,7 +681,7 @@ export const STRATEGIES: Strategy[] = [
                     </h4>
 
                     <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
@@ -693,7 +693,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -705,7 +705,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
@@ -717,7 +717,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -758,11 +758,11 @@ export const STRATEGIES: Strategy[] = [
                 </h3>
                 <div class="space-y-6">
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/20">
+                        <div class="shrink-0 w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 border border-cyan-500/20">
                             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                         </div>
                         <div>
-                            <h4 class="text-blue-200 font-bold text-sm mb-1">Non-Linearity (3D Chess)</h4>
+                            <h4 class="text-cyan-200 font-bold text-sm mb-1">Non-Linearity (3D Chess)</h4>
                             <p class="text-xs text-slate-400 leading-relaxed">Stocks are 2D: they go up or down. Options are 3D: you can profit from direction, time passing, or even volatility exploding. You are no longer limited to just "being right" about direction.</p>
                         </div>
                     </div>
@@ -811,67 +811,67 @@ export const STRATEGIES: Strategy[] = [
             <!-- Comparison Chart -->
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- Stocks Column -->
-                <div class="stocks-card bg-gradient-to-b from-blue-500/10 to-blue-500/5 border border-blue-500/30 rounded-2xl p-6 relative overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:border-blue-500/60 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)]">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="stocks-card bg-gradient-to-b from-cyan-500/10 to-cyan-500/5 border border-cyan-500/30 rounded-2xl p-6 relative overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:border-cyan-500/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                     <div class="relative z-10">
                         <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
                             </div>
-                            <h3 class="text-2xl font-black text-blue-400 uppercase tracking-tight">Stocks</h3>
+                            <h3 class="text-2xl font-black text-cyan-400 uppercase tracking-tight">Stocks</h3>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Ownership</span>
                                     <p class="text-slate-400 text-sm">You own a piece of the company with voting rights</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Dividends</span>
                                     <p class="text-slate-400 text-sm">Receive cash payments from company profits</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">No Expiration</span>
                                     <p class="text-slate-400 text-sm">Hold forever—time is on your side</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Simplicity</span>
                                     <p class="text-slate-400 text-sm">Buy low, sell high—straightforward mechanics</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">No Time Decay</span>
                                     <p class="text-slate-400 text-sm">Your position doesn't erode daily</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Tax Efficiency</span>
                                     <p class="text-slate-400 text-sm">Benefit from lower long-term capital gains rates</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Margin Collateral</span>
                                     <p class="text-slate-400 text-sm">Use your stock holdings as collateral to borrow against</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-blue-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                                <svg class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
                                 <div>
                                     <span class="text-white font-semibold">Liquidity Depth</span>
                                     <p class="text-slate-400 text-sm">Easier to enter/exit large positions without slippage</p>
@@ -1050,7 +1050,7 @@ export const STRATEGIES: Strategy[] = [
                             <h5 class="text-white font-bold">Protective Put</h5>
                         </div>
                         <p class="text-slate-400 text-xs mb-3">Own stock + buy a put = insurance. Your stock can't fall below put strike.</p>
-                        <div class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-1 rounded inline-block">PROTECTION • INSURANCE</div>
+                        <div class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded inline-block">PROTECTION • INSURANCE</div>
                     </div>
 
                     <!-- LEAPS -->
@@ -1070,7 +1070,7 @@ export const STRATEGIES: Strategy[] = [
                             <h5 class="text-white font-bold">Married Put</h5>
                         </div>
                         <p class="text-slate-400 text-xs mb-3">Buy stock + put simultaneously. You're bullish but want protection from day one.</p>
-                        <div class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-1 rounded inline-block">BULLISH + PROTECTED</div>
+                        <div class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded inline-block">BULLISH + PROTECTED</div>
                     </div>
 
                     <!-- Synthetic Long Stock -->
@@ -1145,7 +1145,7 @@ export const STRATEGIES: Strategy[] = [
                             <h5 class="text-white font-bold">Collar</h5>
                         </div>
                         <p class="text-slate-400 text-xs mb-3">Own stock + buy put + sell call. Protection funded by covered call. Limited up/down.</p>
-                        <div class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-1 rounded inline-block">PROTECTION • NEUTRAL</div>
+                        <div class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded inline-block">PROTECTION • NEUTRAL</div>
                     </div>
 
                     <!-- Bull Put Spread -->
@@ -1337,7 +1337,7 @@ export const STRATEGIES: Strategy[] = [
                             <h5 class="text-white font-bold">Portfolio Hedge (Index Puts)</h5>
                         </div>
                         <p class="text-slate-400 text-xs mb-3">Buy SPY or QQQ puts to protect entire portfolio from market crash. Sleep insurance.</p>
-                        <div class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-1 rounded inline-block">CRASH PROTECTION</div>
+                        <div class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded inline-block">CRASH PROTECTION</div>
                     </div>
 
                     <!-- Tax-Loss Harvesting -->
@@ -1367,7 +1367,7 @@ export const STRATEGIES: Strategy[] = [
                             <h5 class="text-white font-bold">Zero-Cost Collar</h5>
                         </div>
                         <p class="text-slate-400 text-xs mb-3">Buy put + sell call where premiums offset. Free protection with capped upside.</p>
-                        <div class="text-[10px] font-mono text-blue-500 bg-blue-500/10 px-2 py-1 rounded inline-block">FREE PROTECTION</div>
+                        <div class="text-[10px] font-mono text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded inline-block">FREE PROTECTION</div>
                     </div>
                 </div>
             </div>
@@ -1409,7 +1409,7 @@ export const STRATEGIES: Strategy[] = [
                         </p>
                     </div>
                     <div class="shrink-0 wise-owl-container" style="perspective: 1000px;">
-                         <img src="/metaphors/owl.png" alt="Wise Owl with Glasses" class="wise-owl-image w-48 h-48 object-contain filter drop-shadow-[0_0_15px_rgba(234,179,8,0.3)] transform -rotate-6 cursor-pointer transition-all duration-300" style="animation: owlBob 3s ease-in-out infinite;" />
+                         <img src="/metaphors/owl.webp" alt="Wise Owl with Glasses" class="wise-owl-image w-48 h-48 object-contain filter drop-shadow-[0_0_15px_rgba(234,179,8,0.3)] transform -rotate-6 cursor-pointer transition-all duration-300" style="animation: owlBob 3s ease-in-out infinite;" />
                     </div>
                     <style>
                         @keyframes owlBob {
@@ -1447,7 +1447,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-rose-500/0 blur-xl group-hover/avatar:bg-rose-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-rose-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(251,113,133,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-rose-400 transition-all duration-300">
-                                <img src="/assets/Lemur Scalper.png" alt="Lemur the Scalper" class="w-full h-full object-cover" />
+                                <img src="/assets/Lemur Scalper.webp" alt="Lemur the Scalper" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1472,7 +1472,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-amber-500/0 blur-xl group-hover/avatar:bg-amber-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-amber-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(251,191,36,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-amber-400 transition-all duration-300">
-                                <img src="/assets/Cheetah Day Trader.png" alt="Cheetah the Day Trader" class="w-full h-full object-cover" />
+                                <img src="/assets/Cheetah Day Trader.webp" alt="Cheetah the Day Trader" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1497,7 +1497,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-cyan-500/0 blur-xl group-hover/avatar:bg-cyan-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-cyan-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(34,211,238,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-cyan-400 transition-all duration-300">
-                                <img src="/assets/Monkey Swing Trader.png" alt="Monkey the Swing Trader" class="w-full h-full object-cover" />
+                                <img src="/assets/Monkey Swing Trader.webp" alt="Monkey the Swing Trader" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1522,7 +1522,7 @@ export const STRATEGIES: Strategy[] = [
                         <div class="relative group/avatar">
                             <div class="absolute inset-0 rounded-full bg-emerald-500/0 blur-xl group-hover/avatar:bg-emerald-500/40 transition-all duration-500"></div>
                             <div class="relative w-56 h-56 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-none group-hover/avatar:shadow-[0_0_30px_rgba(52,211,153,0.5)] group-hover/avatar:scale-110 group-hover/avatar:border-emerald-400 transition-all duration-300">
-                                <img src="/assets/Badger Investor.png" alt="Badger the Investor" class="w-full h-full object-cover" />
+                                <img src="/assets/Badger Investor.webp" alt="Badger the Investor" class="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -1627,7 +1627,7 @@ export const STRATEGIES: Strategy[] = [
                 "
             >
                 <div class="w-36 h-36 shrink-0 mt-1 rounded-full overflow-hidden filter drop-shadow-[0_0_20px_rgba(244,63,94,0.6)]">
-                    <img src="/assets/Fatal_Mistake_Warning.png" alt="Fatal Mistake Warning" class="w-full h-full object-cover" />
+                    <img src="/assets/Fatal_Mistake_Warning.webp" alt="Fatal Mistake Warning" class="w-full h-full object-cover" />
                 </div>
                 <div>
                     <h5 class="text-rose-400 font-black text-3xl mb-4" style="text-shadow: 0 0 20px rgba(244,63,94,0.5)">Fatal Mistake</h5>
@@ -2163,12 +2163,12 @@ export const STRATEGIES: Strategy[] = [
                     <input type="checkbox" class="flip-input" />
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <span class="icon-front"><svg class="w-16 h-16 text-blue-400" style="filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                            <span class="icon-front"><svg class="w-16 h-16 text-cyan-400" style="filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
                             <h2 class="title-front">Use Protection</h2>
                         </div>
                         <div class="flip-card-back">
                             <div class="back-header">
-                                <span class="icon-back"><svg class="w-6 h-6 text-blue-400" style="filter: drop-shadow(0 0 4px currentColor) drop-shadow(0 0 12px currentColor)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                                <span class="icon-back"><svg class="w-6 h-6 text-cyan-400" style="filter: drop-shadow(0 0 4px currentColor) drop-shadow(0 0 12px currentColor)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
                                 <h3 class="title-back">Insurance</h3>
                             </div>
                             <p>Do not forget about <strong>puts</strong> as insurance and portfolio protection instruments. A small premium can save your entire portfolio during a crash.</p>
@@ -2471,7 +2471,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
                 <div class="shrink-0 relative group">
                     <div class="w-56 h-56 rounded-full border-4 border-emerald-500 overflow-hidden bg-black/60 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
-                        <img src="/assets/Krzysztof_Monkey_Cute.png" alt="Monkey with Bananas" class="w-full h-full object-cover" />
+                        <img src="/assets/Krzysztof_Monkey_Cute.webp" alt="Monkey with Bananas" class="w-full h-full object-cover" />
                     </div>
                 </div>
                 <div class="text-center md:text-left">
@@ -2612,8 +2612,8 @@ export const STRATEGIES: Strategy[] = [
                         <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">Expiration</div>
                         <p class="text-xs text-slate-400 mt-2 leading-relaxed">The time left before the contract dies.</p>
                     </div>
-                    <div class="anatomy-number text-center p-4 rounded-2xl transition-all duration-300 cursor-pointer" data-color="blue">
-                        <div class="anatomy-value text-blue-400 font-black text-3xl mb-2 transition-all duration-300">NVDA</div>
+                    <div class="anatomy-number text-center p-4 rounded-2xl transition-all duration-300 cursor-pointer" data-color="cyan">
+                        <div class="anatomy-value text-cyan-400 font-black text-3xl mb-2 transition-all duration-300">NVDA</div>
                         <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">Underlying</div>
                         <p class="text-xs text-slate-400 mt-2 leading-relaxed">The actual asset the option tracks.</p>
                     </div>
@@ -2621,28 +2621,28 @@ export const STRATEGIES: Strategy[] = [
             </div>
 
             <!-- Know Your Underlying -->
-            <div class="know-underlying-pane relative bg-gradient-to-br from-blue-950/40 via-slate-900 to-indigo-950/30 border-2 border-blue-500/30 p-8 rounded-[2rem] overflow-hidden transition-all duration-300 cursor-pointer">
-                <div class="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <div class="know-underlying-pane relative bg-gradient-to-br from-cyan-950/40 via-slate-900 to-indigo-950/30 border-2 border-cyan-500/30 p-8 rounded-[2rem] overflow-hidden transition-all duration-300 cursor-pointer">
+                <div class="absolute top-0 right-0 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div class="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
                 <div class="relative z-10">
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-                            <svg class="w-7 h-7 text-blue-400" style="filter: drop-shadow(0 0 8px rgba(59,130,246,0.6))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center">
+                            <svg class="w-7 h-7 text-cyan-400" style="filter: drop-shadow(0 0 8px rgba(34,211,238,0.6))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                                 <path d="M6 8h2M6 12h2M6 16h2M16 8h2M16 12h2M16 16h2"/>
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-black text-blue-400 uppercase tracking-wide">Know Your Underlying</h3>
+                            <h3 class="text-xl font-black text-cyan-400 uppercase tracking-wide">Know Your Underlying</h3>
                             <p class="text-xs text-slate-400 font-mono">The Foundation of Every Options Trade</p>
                         </div>
                     </div>
 
-                    <div class="bg-black/30 border border-blue-500/20 rounded-2xl p-6 mb-6">
+                    <div class="bg-black/30 border border-cyan-500/20 rounded-2xl p-6 mb-6">
                         <p class="text-lg text-white leading-relaxed mb-4">
-                            <span class="text-blue-400 font-bold text-2xl">"</span>An option is only as good as the company beneath it.<span class="text-blue-400 font-bold text-2xl">"</span>
+                            <span class="text-cyan-400 font-bold text-2xl">"</span>An option is only as good as the company beneath it.<span class="text-cyan-400 font-bold text-2xl">"</span>
                         </p>
                         <p class="text-slate-300 text-sm leading-relaxed">
                             Before you ever buy or sell an option, you must <span class="text-white font-bold">deeply understand the underlying company</span>. Options amplify everything—gains, losses, and especially <span class="text-rose-400 font-semibold">ignorance</span>. Trading options on a stock you don't understand is like betting on a horse you've never seen run.
@@ -2655,7 +2655,7 @@ export const STRATEGIES: Strategy[] = [
                     </h4>
 
                     <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
@@ -2667,7 +2667,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -2679,7 +2679,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
@@ -2691,7 +2691,7 @@ export const STRATEGIES: Strategy[] = [
                             </div>
                         </div>
 
-                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-blue-500/30 hover:bg-slate-800/70">
+                        <div class="bg-slate-800/50 border border-white/5 rounded-xl p-4 transition-all hover:border-cyan-500/30 hover:bg-slate-800/70">
                             <div class="flex items-start gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center shrink-0 mt-0.5">
                                     <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -2732,11 +2732,11 @@ export const STRATEGIES: Strategy[] = [
                 </h3>
                 <div class="space-y-6">
                     <div class="flex gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/20">
+                        <div class="shrink-0 w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 border border-cyan-500/20">
                             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                         </div>
                         <div>
-                            <h4 class="text-blue-200 font-bold text-sm mb-1">Non-Linearity (3D Chess)</h4>
+                            <h4 class="text-cyan-200 font-bold text-sm mb-1">Non-Linearity (3D Chess)</h4>
                             <p class="text-xs text-slate-400 leading-relaxed">Stocks are 2D: they go up or down. Options are 3D: you can profit from direction, time passing, or even volatility exploding. You are no longer limited to just "being right" about direction.</p>
                         </div>
                     </div>
@@ -2924,8 +2924,8 @@ export const STRATEGIES: Strategy[] = [
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-blue-900/30 to-blue-950/20 border border-blue-500/30 rounded-2xl p-6">
-                <h3 class="text-xl font-bold text-blue-400 mb-4">📈 IV in Action: Real Example</h3>
+            <div class="bg-gradient-to-br from-cyan-900/30 to-cyan-950/20 border border-cyan-500/30 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-cyan-400 mb-4">📈 IV in Action: Real Example</h3>
                 <div class="space-y-4">
                     <div class="bg-black/40 rounded-xl p-4">
                         <h4 class="text-white font-bold mb-2">Scenario 1: AAPL (Low IV = 25%)</h4>
@@ -3229,8 +3229,8 @@ export const STRATEGIES: Strategy[] = [
                         </li>
                     </ul>
                 </div>
-                <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 border border-blue-500/30 rounded-xl p-5">
-                    <h4 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                <div class="bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 border border-cyan-500/30 rounded-xl p-5">
+                    <h4 class="text-cyan-400 font-bold mb-3 flex items-center gap-2">
                         <span>⚡</span>
                         <span>Delta Reading Guide</span>
                     </h4>
@@ -3279,7 +3279,7 @@ export const STRATEGIES: Strategy[] = [
             </div>
 
             <!-- Interactive Live Chain Below -->
-            <div class="bg-gradient-to-br from-purple-500/10 to-blue-500/5 border-2 border-purple-500/40 rounded-2xl p-6 text-center">
+            <div class="bg-gradient-to-br from-purple-500/10 to-cyan-500/5 border-2 border-purple-500/40 rounded-2xl p-6 text-center">
                 <div class="inline-flex items-center gap-3 mb-4">
                     <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
                         <span class="text-3xl">🔴</span>
@@ -3502,7 +3502,7 @@ export const STRATEGIES: Strategy[] = [
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-500/30 rounded-2xl p-6">
+            <div class="bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 border border-cyan-500/30 rounded-2xl p-6">
                 <h3 class="text-xl font-bold text-cyan-400 mb-4">🛡️ Puts as Portfolio Insurance</h3>
                 <p class="text-slate-300 mb-4">Own 100 shares of NVDA at $120? Buy a $115 put for $3 ($300). If NVDA crashes to $80, you can sell your shares at $115. Your "floor" is set.</p>
                 <div class="grid md:grid-cols-2 gap-4">
@@ -4433,7 +4433,7 @@ export const STRATEGIES: Strategy[] = [
             <div class="bg-black/60 border border-amber-500/30 rounded-2xl p-6 overflow-hidden">
                 <div class="flex flex-col lg:flex-row gap-6 items-center">
                     <div class="lg:w-1/2">
-                        <img src="/assets/Badger Bias.png" alt="Badger Bias - Stay Flexible" class="w-full h-auto rounded-xl border border-white/10" />
+                        <img src="/assets/Badger Bias.webp" alt="Badger Bias - Stay Flexible" class="w-full h-auto rounded-xl border border-white/10" />
                     </div>
                     <div class="lg:w-1/2 space-y-4">
                         <h3 class="text-2xl font-bold text-amber-400 flex items-center gap-3">
@@ -4587,7 +4587,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-indigo-400 font-black uppercase text-lg tracking-widest">Monthly</span>
                     <span class="text-sm text-slate-400 uppercase">The Macro Strategist</span>
                 </div>
-                <img src="/eos_charts/eos_monthly.png" alt="EOS Monthly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-indigo-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_monthly.webp" alt="EOS Monthly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-indigo-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>The Primary Trend.</b> The tide itself. This establishes the dominant direction of the market (Secular Bull or Bear). We align with this, but rarely trade it directly.</p>
             </div>
 
@@ -4598,7 +4598,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-emerald-400 font-black uppercase text-lg tracking-widest">Weekly</span>
                     <span class="text-sm text-slate-400 uppercase">The Investor</span>
                 </div>
-                <img src="/eos_charts/eos_weekly.png" alt="EOS Weekly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-emerald-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_weekly.webp" alt="EOS Weekly Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-emerald-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Deep Time.</b> Tectonic movements. Ignoring the daily noise. Wealth is built here. Compounding works best in this frame.</p>
             </div>
 
@@ -4609,7 +4609,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-amber-400 font-black uppercase text-lg tracking-widest">Daily</span>
                     <span class="text-sm text-slate-400 uppercase">The Swing Trader</span>
                 </div>
-                <img src="/eos_charts/eos_daily.png" alt="EOS Daily Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-amber-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_daily.webp" alt="EOS Daily Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-amber-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Human Time.</b> The rhythm of business. Trends last for days or weeks. This is the "sweet spot" for most option strategies.</p>
             </div>
 
@@ -4620,7 +4620,7 @@ export const STRATEGIES: Strategy[] = [
                     <span class="text-rose-400 font-black uppercase text-lg tracking-widest">Minute</span>
                     <span class="text-sm text-slate-400 uppercase">The Day Trader</span>
                 </div>
-                <img src="/eos_charts/eos_minute.png" alt="EOS Minute Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-rose-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
+                <img src="/eos_charts/eos_minute.webp" alt="EOS Minute Chart" class="w-full h-[625px] object-contain rounded-xl mb-4 border border-rose-500/30 bg-slate-900/50 opacity-90 group-hover:opacity-100 transition-opacity" />
                 <p class="text-slate-300 text-base leading-relaxed"><b>Quantum Foam.</b> Chaos and noise. Time moves incredibly fast here. One mistake can be fatal. High stress, high adrenaline.</p>
             </div>
 
@@ -5014,13 +5014,13 @@ export const STRATEGIES: Strategy[] = [
                 <p class="text-slate-400 text-sm text-center mb-8">Every options position is exposed to multiple risk factors simultaneously</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-black/40 p-6 rounded-2xl border border-blue-500/20 hover:border-blue-400/40 transition-colors">
+                    <div class="bg-black/40 p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/40 transition-colors">
                         <div class="flex items-center gap-3 mb-4">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-blue-500/30 bg-blue-500/10">
-                                <svg class="w-6 h-6 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="m13 13 6 6"/></svg>
+                            <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-cyan-500/30 bg-cyan-500/10">
+                                <svg class="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="m13 13 6 6"/></svg>
                             </span>
                             <div>
-                                <h4 class="text-lg font-bold text-blue-400">Directional (Delta)</h4>
+                                <h4 class="text-lg font-bold text-cyan-400">Directional (Delta)</h4>
                                 <span class="text-[10px] font-mono text-slate-500">PRICE MOVEMENT</span>
                             </div>
                         </div>
@@ -5228,12 +5228,12 @@ export const STRATEGIES: Strategy[] = [
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 animate-fadeIn" style="animation-delay: 0.3s;">
             
             <!-- DELTA -->
-            <div class="greek-card card-delta relative overflow-hidden bg-slate-800/40 border border-blue-500/20 p-6 rounded-2xl min-h-[280px] hover:border-blue-400 hover:bg-slate-800/80 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 group flex flex-col">
+            <div class="greek-card card-delta relative overflow-hidden bg-slate-800/40 border border-cyan-500/20 p-6 rounded-2xl min-h-[280px] hover:border-cyan-400 hover:bg-slate-800/80 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] transition-all duration-300 group flex flex-col">
                 <div class="relative z-10 pointer-events-none flex-1">
                     <div class="text-center mb-6">
-                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-xl border border-blue-500/30 bg-blue-500/10 mb-2 transition-transform group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"><svg class="w-7 h-7 text-blue-400" style="filter: drop-shadow(0 0 6px rgba(59,130,246,0.8))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></span>
-                        <h4 class="text-blue-400 font-black text-lg uppercase tracking-tight">Delta = Speed</h4>
-                         <div class="w-8 h-1 bg-blue-500/30 mx-auto mt-2 rounded-full"></div>
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-xl border border-cyan-500/30 bg-cyan-500/10 mb-2 transition-transform group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"><svg class="w-7 h-7 text-cyan-400" style="filter: drop-shadow(0 0 6px rgba(34,211,238,0.8))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></span>
+                        <h4 class="text-cyan-400 font-black text-lg uppercase tracking-tight">Delta = Speed</h4>
+                         <div class="w-8 h-1 bg-cyan-500/30 mx-auto mt-2 rounded-full"></div>
                     </div>
                     <ul class="text-xs text-slate-400 space-y-3 list-disc pl-4 leading-relaxed">
                         <li>Option $ change per $1 stock move.</li>
@@ -5382,7 +5382,7 @@ export const STRATEGIES: Strategy[] = [
             <!-- Anatomy of IV Image -->
             <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-amber-500/20">
                 <h3 class="text-xl font-bold text-amber-400 mb-4 text-center">Anatomy of Implied Volatility</h3>
-                <img src="/assets/Anatomy of IV.png" alt="Anatomy of Implied Volatility" class="w-full max-w-3xl mx-auto rounded-xl border border-white/10" />
+                <img src="/assets/Anatomy of IV.webp" alt="Anatomy of Implied Volatility" class="w-full max-w-3xl mx-auto rounded-xl border border-white/10" />
             </div>
             <div class="bg-slate-800/50 p-10 rounded-[2.5rem] border border-white/10 text-center relative overflow-hidden">
                 <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent pointer-events-none"></div>
@@ -5391,7 +5391,7 @@ export const STRATEGIES: Strategy[] = [
                 <div class="text-3xl md:text-5xl text-slate-200 font-mono mb-6 leading-loose select-none flex flex-wrap justify-center items-center gap-x-4 gap-y-8">
                     <span class="text-emerald-400 font-black hover:scale-110 transition-transform inline-block cursor-help" data-var="C">C</span>
                     <span>=</span>
-                    <span class="text-blue-400 font-black hover:scale-110 transition-transform inline-block cursor-help" data-var="S">S</span>
+                    <span class="text-cyan-400 font-black hover:scale-110 transition-transform inline-block cursor-help" data-var="S">S</span>
                     <span class="text-indigo-400 font-black hover:scale-110 transition-transform inline-block cursor-help" data-var="N">N</span>
                     <span class="text-indigo-300 group relative">
                         (<span class="hover:scale-110 transition-transform inline-block cursor-help font-black" data-var="d1">d₁</span>)
@@ -5419,7 +5419,7 @@ export const STRATEGIES: Strategy[] = [
                     <div class="text-sm font-bold text-white mb-1">Call Price</div>
                     <p class="text-[10px] text-slate-400 leading-relaxed">The theoretical fair premium of the option contract.</p>
                 </div>
-                <div id="def-S" class="bg-white/5 p-4 rounded-2xl border border-white/10 transition-all duration-500 flex flex-col justify-center text-blue-400">
+                <div id="def-S" class="bg-white/5 p-4 rounded-2xl border border-white/10 transition-all duration-500 flex flex-col justify-center text-cyan-400">
                     <div class="text-xs uppercase font-black tracking-widest mb-1 opacity-50">S</div>
                     <div class="text-sm font-bold text-white mb-1">Stock Price</div>
                     <p class="text-[10px] text-slate-400 leading-relaxed">The current spot price of the underlying asset.</p>
@@ -5666,7 +5666,7 @@ export const STRATEGIES: Strategy[] = [
         <div class="space-y-8">
             <!-- Brian Shannon Stage Analysis Chart -->
             <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/assets/market-stages.jpg" alt="Brian Shannon's 4 Stages of Market Structure" class="w-full h-auto" />
+                <img src="/assets/market-stages.webp" alt="Brian Shannon's 4 Stages of Market Structure" class="w-full h-auto" />
             </div>
 
             <div class="text-center text-xs text-slate-500 italic">Chart by Brian Shannon (@alphatrends) - The 4 Stages of a Stock's Life Cycle</div>
@@ -5718,7 +5718,7 @@ export const STRATEGIES: Strategy[] = [
 
             <!-- Market Cycle -->
             <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/assets/market cycle.png" alt="Market Cycle" class="w-full h-auto" />
+                <img src="/assets/market cycle.webp" alt="Market Cycle" class="w-full h-auto" />
             </div>
 
             <!-- STRATEGIES FOR EACH STAGE -->
@@ -6044,7 +6044,7 @@ export const STRATEGIES: Strategy[] = [
             <!-- Clear Support & Resistance Example -->
             <div class="bg-slate-800/50 p-6 rounded-[2rem] border border-cyan-500/20">
                 <h3 class="text-xl font-bold text-cyan-400 mb-4 text-center">Clear Support & Resistance Levels</h3>
-                <img src="/s:r/Clear Support Resistence.png" alt="Clear Support and Resistance Levels" class="w-full max-w-4xl mx-auto rounded-xl border border-white/10" />
+                <img src="/s:r/Clear Support Resistence.webp" alt="Clear Support and Resistance Levels" class="w-full max-w-4xl mx-auto rounded-xl border border-white/10" />
             </div>
 
             <!-- Interactive Chart Exercise -->
@@ -6058,7 +6058,7 @@ export const STRATEGIES: Strategy[] = [
                     Where has price bounced multiple times? Where has it been rejected? Train your eye to see what the market remembers.
                 </p>
                 <div class="relative rounded-xl overflow-hidden border border-slate-700 bg-black/50">
-                    <img src="/s:r/zs_daily.png" alt="Daily Chart - Draw Support and Resistance" class="w-full h-auto object-contain" />
+                    <img src="/s:r/zs_daily.webp" alt="Daily Chart - Draw Support and Resistance" class="w-full h-auto object-contain" />
                 </div>
                 <div class="mt-4 flex items-center gap-2 text-slate-400 text-sm">
                     <svg class="w-5 h-5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
@@ -6083,7 +6083,7 @@ export const STRATEGIES: Strategy[] = [
 
                         <!-- Answer Chart with Lines -->
                         <div class="relative rounded-xl overflow-hidden border border-emerald-500/30 bg-black/50">
-                            <img src="/s:r/zs_daily.png" alt="Answer - Support and Resistance Levels" class="w-full h-auto object-contain" />
+                            <img src="/s:r/zs_daily.webp" alt="Answer - Support and Resistance Levels" class="w-full h-auto object-contain" />
                             <!-- Resistance Zone Overlay -->
                             <div class="absolute left-0 right-0 h-[8%] bg-rose-500/20 border-t-2 border-b-2 border-rose-500/60 border-dashed" style="top: 14%;">
                                 <span class="absolute right-2 top-1/2 -translate-y-1/2 text-rose-400 font-bold text-xs uppercase tracking-wider bg-slate-900/80 px-2 py-0.5 rounded">Resistance Zone</span>
@@ -13334,7 +13334,7 @@ export const STRATEGIES: Strategy[] = [
     {
         id: 'box-spread', name: 'Box Spread', tier: 7, tierName: 'Advanced + Exotic', subCategory: 'Precision Income', outlook: 'Neutral', objective: 'Arbitrage', risk: 'Defined', legs: [{ type: 'call', action: 'buy', strikeOffset: -5, quantity: 1 }, { type: 'call', action: 'sell', strikeOffset: 5, quantity: 1 }, { type: 'put', action: 'buy', strikeOffset: 5, quantity: 1 }, { type: 'put', action: 'sell', strikeOffset: -5, quantity: 1 }], analysis: `
         <div style="font-family: system-ui; color: #e2e8f0; line-height: 1.7; max-width: 800px;">
-            <div style="background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.05)); border: 1px solid rgba(59,130,246,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
+            <div style="background: linear-gradient(135deg, rgba(34,211,238,0.15), rgba(34,211,238,0.05)); border: 1px solid rgba(34,211,238,0.3); border-radius: 16px; padding: 24px; margin-bottom: 20px;">
                 <h2 style="color: #60a5fa; margin: 0 0 12px 0; font-size: 1.3em;">📦 Box Spread</h2>
                 <p style="color: #94a3b8; margin: 0;">A combination of a bull call spread and a bear put spread at the same strikes. The result is a position that's worth exactly the width of the strikes at expiration, regardless of stock price. Used for arbitrage and synthetic lending/borrowing.</p>
             </div>

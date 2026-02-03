@@ -136,9 +136,8 @@ export function getTierColor(tier: number): string {
   const colors: Record<string, string> = {
     slate: 'text-slate-400 border-slate-600 bg-slate-900',
     amber: 'text-amber-400 border-amber-600 bg-amber-950',
-    blue: 'text-blue-400 border-blue-600 bg-blue-950',
-    emerald: 'text-emerald-400 border-emerald-600 bg-emerald-950',
     cyan: 'text-cyan-400 border-cyan-600 bg-cyan-950',
+    emerald: 'text-emerald-400 border-emerald-600 bg-emerald-950',
     purple: 'text-purple-400 border-purple-600 bg-purple-950',
     pink: 'text-pink-400 border-pink-600 bg-pink-950',
     orange: 'text-orange-400 border-orange-600 bg-orange-950',
@@ -153,9 +152,8 @@ export function getTierBadgeColor(tier: number): string {
   const colors: Record<string, string> = {
     slate: 'bg-slate-800 text-slate-300',
     amber: 'bg-amber-900/50 text-amber-400',
-    blue: 'bg-blue-900/50 text-blue-400',
-    emerald: 'bg-emerald-900/50 text-emerald-400',
     cyan: 'bg-cyan-900/50 text-cyan-400',
+    emerald: 'bg-emerald-900/50 text-emerald-400',
     purple: 'bg-purple-900/50 text-purple-400',
     pink: 'bg-pink-900/50 text-pink-400',
     orange: 'bg-orange-900/50 text-orange-400',

@@ -37,6 +37,24 @@ export const JUNGLE_BADGES: JungleBadge[] = [
   { id: 'xp-master', name: 'XP Master', description: 'Earn 25,000 XP', icon: '🌟', rarity: 'epic', category: 'achievement', requirement: { type: 'xp_earned', amount: 25000 }, xpReward: 250 },
   { id: 'level-5', name: 'Rising Star', description: 'Reach Level 5', icon: '⬆️', rarity: 'uncommon', category: 'achievement', requirement: { type: 'level_reached', level: 5 }, xpReward: 100 },
   { id: 'level-10', name: 'Maximum Level', description: 'Reach Level 10', icon: '🏆', rarity: 'legendary', category: 'achievement', requirement: { type: 'level_reached', level: 10 }, xpReward: 500 },
+  { id: 'graduate', name: 'Graduate', description: 'Complete all lessons from all 4 animal curricula', icon: '🎓', rarity: 'epic', category: 'achievement', requirement: { type: 'complete_all_animals' }, xpReward: 500 },
+
+  // Mission Badges
+  { id: 'mission-starter', name: 'Mission Starter', description: 'Complete your first daily mission', icon: '🎯', rarity: 'common', category: 'achievement', requirement: { type: 'custom', check: 'first_mission' }, xpReward: 25 },
+  { id: 'mission-master', name: 'Mission Master', description: 'Complete 50 missions', icon: '🏹', rarity: 'rare', category: 'achievement', requirement: { type: 'custom', check: 'missions_50' }, xpReward: 200 },
+  { id: 'weekly-warrior', name: 'Weekly Warrior', description: 'Complete all weekly missions in a single week', icon: '⚔️', rarity: 'uncommon', category: 'achievement', requirement: { type: 'custom', check: 'all_weekly_missions' }, xpReward: 100 },
+
+  // Social Badges
+  { id: 'first-share', name: 'Opening Trade', description: 'Share your first trade to the community feed', icon: '📤', rarity: 'common', category: 'achievement', requirement: { type: 'custom', check: 'first_trade_shared' }, xpReward: 25 },
+  { id: 'popular-trader', name: 'Popular Trader', description: 'Receive 50 likes on your shared trades', icon: '❤️', rarity: 'rare', category: 'achievement', requirement: { type: 'custom', check: 'likes_received_50' }, xpReward: 150 },
+  { id: 'trade-of-week', name: 'Trade of the Week', description: 'Have your trade featured as Trade of the Week', icon: '🌟', rarity: 'epic', category: 'achievement', requirement: { type: 'custom', check: 'trade_of_week' }, xpReward: 250 },
+  { id: 'supportive-trader', name: 'Supportive Trader', description: 'Like 25 trades from other community members', icon: '👏', rarity: 'uncommon', category: 'achievement', requirement: { type: 'custom', check: 'likes_given_25' }, xpReward: 50 },
+
+  // Tribe Badges
+  { id: 'tribe-member', name: 'Tribe Member', description: 'Join one of the jungle tribes', icon: '🏕️', rarity: 'common', category: 'achievement', requirement: { type: 'custom', check: 'joined_tribe' }, xpReward: 25 },
+  { id: 'tribe-contributor', name: 'Tribe Contributor', description: 'Contribute 1,000 XP to your tribe', icon: '🤝', rarity: 'uncommon', category: 'achievement', requirement: { type: 'custom', check: 'tribe_xp_1000' }, xpReward: 75 },
+  { id: 'tribe-champion', name: 'Tribe Champion', description: 'Be part of the winning tribe at season end', icon: '🏆', rarity: 'epic', category: 'achievement', requirement: { type: 'custom', check: 'tribe_season_winner' }, xpReward: 300 },
+  { id: 'tribe-legend', name: 'Tribe Legend', description: 'Contribute 10,000 XP to your tribe', icon: '👑', rarity: 'legendary', category: 'achievement', requirement: { type: 'custom', check: 'tribe_xp_10000' }, xpReward: 500 },
 
   // Streak
   { id: 'on-fire', name: 'On Fire', description: '5-day login streak', icon: '🔥', rarity: 'common', category: 'streak', requirement: { type: 'streak', days: 5 }, xpReward: 50 },
@@ -54,6 +72,8 @@ export const JUNGLE_BADGES: JungleBadge[] = [
   { id: 'explorer', name: 'Jungle Explorer', description: 'Visit every section', icon: '🗺️', rarity: 'uncommon', category: 'hidden', requirement: { type: 'custom', check: 'visited_all_sections' }, xpReward: 75 },
   { id: 'lions-roar', name: "Lion's Roar", description: '???', icon: '🦁', rarity: 'legendary', category: 'hidden', requirement: { type: 'custom', check: 'secret_lion' }, xpReward: 500 },
   { id: 'comeback-kid', name: 'Comeback Kid', description: 'Pass a quiz after failing 3 times', icon: '💫', rarity: 'rare', category: 'hidden', requirement: { type: 'custom', check: 'comeback' }, xpReward: 150 },
+  { id: 'all-badges', name: 'Badge Collector', description: 'Earn all other badges (excluding hidden)', icon: '🏅', rarity: 'legendary', category: 'hidden', requirement: { type: 'custom', check: 'all_badges' }, xpReward: 1000 },
+  { id: 'mission-streak-5', name: 'Mission Streak', description: '5-day mission completion streak', icon: '🔥', rarity: 'uncommon', category: 'streak', requirement: { type: 'custom', check: 'mission_streak_5' }, xpReward: 75 },
 ];
 
 // Helper functions
@@ -83,13 +103,15 @@ export const getXPProgress = (xp: number): { current: number; needed: number; pe
 };
 
 export const getBadgeById = (id: string): JungleBadge | undefined => JUNGLE_BADGES.find(b => b.id === id);
+export const getBadgesByCategory = (category: string): JungleBadge[] => JUNGLE_BADGES.filter(b => b.category === category);
+export const getBadgesByRarity = (rarity: string): JungleBadge[] => JUNGLE_BADGES.filter(b => b.rarity === rarity);
 export const getVisibleBadges = (): JungleBadge[] => JUNGLE_BADGES.filter(b => b.category !== 'hidden');
 export const getHiddenBadges = (): JungleBadge[] => JUNGLE_BADGES.filter(b => b.category === 'hidden');
 
 export const RARITY_COLORS: Record<string, { bg: string; border: string; text: string }> = {
   common: { bg: 'bg-zinc-500/20', border: 'border-zinc-500', text: 'text-zinc-400' },
   uncommon: { bg: 'bg-green-500/20', border: 'border-green-500', text: 'text-green-400' },
-  rare: { bg: 'bg-blue-500/20', border: 'border-blue-500', text: 'text-blue-400' },
+  rare: { bg: 'bg-cyan-500/20', border: 'border-cyan-500', text: 'text-cyan-400' },
   epic: { bg: 'bg-purple-500/20', border: 'border-purple-500', text: 'text-purple-400' },
   legendary: { bg: 'bg-amber-500/20', border: 'border-amber-500', text: 'text-amber-400' },
 };

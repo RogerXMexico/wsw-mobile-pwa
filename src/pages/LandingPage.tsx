@@ -13,7 +13,7 @@ const features = [
   { title: 'The Greeks', desc: 'Visualize the math. See Delta, Gamma, Theta in action.', icon: Activity, color: 'cyan' },
   { title: 'Strategy Lab', desc: 'Build complex spreads and ratios. Test before you trade.', icon: Layers, color: 'purple' },
   { title: 'Volatility', desc: 'Master the crush. Sell fear when the jungle panics.', icon: Zap, color: 'pink' },
-  { title: 'Market Structure', desc: 'Read the terrain. Hunt with the trend, not against it.', icon: Target, color: 'blue' },
+  { title: 'Market Structure', desc: 'Read the terrain. Hunt with the trend, not against it.', icon: Target, color: 'cyan' },
   { title: 'Time & Skew', desc: 'Patience pays. Let time decay work for you.', icon: Layers, color: 'orange' },
 ];
 
@@ -33,7 +33,6 @@ const colorMap: Record<string, { text: string; border: string; bg: string }> = {
   cyan: { text: 'text-cyan-400', border: 'border-cyan-500/30', bg: 'bg-cyan-500/10' },
   purple: { text: 'text-purple-400', border: 'border-purple-500/30', bg: 'bg-purple-500/10' },
   pink: { text: 'text-pink-500', border: 'border-pink-500/30', bg: 'bg-pink-500/10' },
-  blue: { text: 'text-blue-400', border: 'border-blue-500/30', bg: 'bg-blue-500/10' },
   orange: { text: 'text-orange-400', border: 'border-orange-500/30', bg: 'bg-orange-500/10' },
 };
 
@@ -52,7 +51,7 @@ export default function LandingPage({ onEnter }: Props) {
         {/* Hero */}
         <div className="text-center max-w-lg mx-auto mb-16 space-y-6">
           <div className="w-32 h-32 mx-auto mb-4 rounded-full border-2 border-emerald-500 shadow-[0_0_30px_rgba(16,185,129,0.4)] flex items-center justify-center bg-black/50 overflow-hidden animate-float">
-            <img src="/assets/lion_wsw.png" alt="WSW Logo" className="w-full h-full object-cover" />
+            <img src="/assets/lion_wsw.webp" alt="WSW Logo" className="w-full h-full object-cover" />
           </div>
 
           <h1 className="text-4xl font-black tracking-tighter">
@@ -118,7 +117,7 @@ export default function LandingPage({ onEnter }: Props) {
         {/* Bottom CTA */}
         <div className="text-center mb-16">
           <div className="w-28 h-28 mx-auto mb-4 rounded-full border-2 border-[#39ff14]/30 overflow-hidden shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-            <img src="/assets/monkey.png" alt="WSW Monkey" className="w-full h-full object-cover" />
+            <img src="/assets/monkey.webp" alt="WSW Monkey" className="w-full h-full object-cover" />
           </div>
           <h2 className="text-xl font-black text-white mb-6">
             BECOME A <span className="text-pink-500 drop-shadow-[0_0_20px_rgba(255,20,147,0.8)]">BEAST</span> OF AN INVESTOR

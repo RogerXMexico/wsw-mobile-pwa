@@ -23,7 +23,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     estimatedTime: '30-60 minutes',
     color: 'yellow',
     icon: '⚡',
-    imagePath: '/assets/Cheetah Day Trader.png',
+    imagePath: '/assets/Cheetah Day Trader.webp',
     tierSequence: [0.5, 3, 4, 5],
   },
   {
@@ -35,7 +35,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     estimatedTime: '2-3 weeks',
     color: 'emerald',
     icon: '🌱',
-    imagePath: '/assets/Capybara_Foliage_Refined.png',
+    imagePath: '/assets/Capybara_Foliage_Refined.webp',
     tierSequence: [0, 1, 2, 3, 4, 5, 6, 7],
   },
   {
@@ -47,7 +47,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     estimatedTime: '1-2 weeks',
     color: 'amber',
     icon: '🦜',
-    imagePath: '/assets/Tucan_Female_Closeup.png',
+    imagePath: '/assets/Tucan_Female_Closeup.webp',
     tierSequence: [3, 4, 5, 6, 7],
   },
   {
@@ -59,7 +59,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     estimatedTime: '3-4 weeks',
     color: 'purple',
     icon: '🦧',
-    imagePath: '/assets/orangutan_old_money.png',
+    imagePath: '/assets/orangutan_old_money.webp',
     tierSequence: [5, 6, 7],
   },
   {
@@ -71,7 +71,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     estimatedTime: '4-6 weeks',
     color: 'red',
     icon: '🐆',
-    imagePath: '/assets/Panther.png',
+    imagePath: '/assets/Panther.webp',
     tierSequence: [7],
   },
 ];

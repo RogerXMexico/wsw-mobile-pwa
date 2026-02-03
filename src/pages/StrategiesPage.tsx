@@ -19,7 +19,7 @@ const OUTLOOK_COLORS: Record<string, string> = {
   'Volatile/Bear': 'bg-purple-900/40 text-purple-400',
   'Mild Bull': 'bg-emerald-900/30 text-[#39ff14]',
   'Range/Bull': 'bg-cyan-900/40 text-cyan-400',
-  'Directional': 'bg-blue-900/50 text-blue-400',
+  'Directional': 'bg-cyan-900/50 text-cyan-400',
 };
 
 export default function StrategiesPage() {

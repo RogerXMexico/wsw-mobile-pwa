@@ -381,10 +381,19 @@ export default function GreeksVisualizer() {
 
 // ─── Sub-Components ──────────────────────────────────
 
+const SLIDER_VARIANT: Record<string, string> = {
+  '#22c55e': 'sim-slider',
+  '#ffffff': 'sim-slider',
+  '#a855f7': 'sim-slider sim-slider-purple',
+  '#fbbf24': 'sim-slider sim-slider-amber',
+  '#22d3ee': 'sim-slider sim-slider-cyan',
+};
+
 function Slider({ label, value, onChange, min, max, step, prefix, suffix, color }: {
   label: string; value: number; onChange: (v: number) => void;
   min: number; max: number; step: number; prefix?: string; suffix?: string; color: string;
 }) {
+  const sliderClass = SLIDER_VARIANT[color] || 'sim-slider';
   return (
     <div>
       <div className="flex justify-between items-center mb-1">
@@ -396,10 +405,7 @@ function Slider({ label, value, onChange, min, max, step, prefix, suffix, color 
       <input
         type="range" min={min} max={max} step={step} value={value}
         onChange={(e) => onChange(parseFloat(e.target.value))}
-        className="w-full h-2 rounded-full appearance-none cursor-pointer"
-        style={{
-          background: `linear-gradient(to right, ${color} 0%, ${color} ${((value - min) / (max - min)) * 100}%, #27272a ${((value - min) / (max - min)) * 100}%, #27272a 100%)`,
-        }}
+        className={`w-full ${sliderClass}`}
       />
     </div>
   );

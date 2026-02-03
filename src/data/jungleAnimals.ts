@@ -15,7 +15,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Slow and steady wins the race.',
     teachingStyle: 'Terry moves at a deliberate pace, ensuring you understand each concept before moving on. He emphasizes capital preservation above all else.',
     philosophy: 'Never rush, never panic. Sleep soundly knowing your downside is protected. The tortoise beats the hare in the long run.',
-    avatarPath: '/assets/tortoise_value_investor.png',
+    avatarPath: '/assets/tortoise_value_investor.webp',
     colors: {
       primary: '#22c55e',
       accent: '#86efac',
@@ -46,7 +46,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Knowledge is the ultimate edge.',
     teachingStyle: 'Oliver approaches trading like an academic pursuit. He loves spreadsheets, probability calculations, and detailed analysis of every variable.',
     philosophy: 'Never enter a trade without understanding every Greek. The market rewards the prepared mind.',
-    avatarPath: '/assets/Owl WSW.png',
+    avatarPath: '/assets/Owl WSW.webp',
     colors: {
       primary: '#3b82f6',
       accent: '#93c5fd',
@@ -77,7 +77,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Speed kills—hesitation kills faster.',
     teachingStyle: 'Chase teaches with urgency and intensity. He focuses on quick decision-making, reading momentum, and executing without hesitation.',
     philosophy: 'In the jungle of trading, the fastest predator eats. But know when to sprint and when to rest.',
-    avatarPath: '/assets/Cheetah WSW.png',
+    avatarPath: '/assets/Cheetah WSW.webp',
     colors: {
       primary: '#f59e0b',
       accent: '#fcd34d',
@@ -108,7 +108,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'There\'s always an angle.',
     teachingStyle: 'Fiona teaches you to see what others miss. She focuses on edge, mispricings, and elegant solutions to market puzzles.',
     philosophy: 'The market is full of puzzles. Find the angle that others miss, and profit from their blindness.',
-    avatarPath: '/assets/Fiona_Fox_Closeup.png',
+    avatarPath: '/assets/Fiona_Fox_Closeup.webp',
     colors: {
       primary: '#a855f7',
       accent: '#c4b5fd',
@@ -139,7 +139,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Every mistake is a lesson in disguise!',
     teachingStyle: 'Goldie teaches with enthusiasm and encouragement. She emphasizes following proven systems and learning from every trade.',
     philosophy: 'Stay loyal to your trading plan. Celebrate the wins, learn from the losses, and always come back wagging your tail.',
-    avatarPath: '/assets/Golden Retriever WSW.png',
+    avatarPath: '/assets/Golden Retriever WSW.webp',
     colors: {
       primary: '#eab308',
       accent: '#fde047',
@@ -170,7 +170,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Why rush? Theta works while I nap.',
     teachingStyle: 'Stanley teaches the art of doing less. He emphasizes premium selling, theta decay, and the beauty of passive income.',
     philosophy: 'Let time decay work for you. The best trades are the ones that make money while you sleep.',
-    avatarPath: '/assets/Sloth WSW.png',
+    avatarPath: '/assets/Sloth WSW.webp',
     colors: {
       primary: '#14b8a6',
       accent: '#5eead4',
@@ -201,7 +201,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Let\'s dig into this and understand every angle.',
     teachingStyle: 'Luke approaches each lesson like a strategic puzzle. He breaks down complex strategies into logical components.',
     philosophy: 'Every trade should have defined risk. Know your max loss before you enter. Spreads are your friend.',
-    avatarPath: '/assets/badger.png',
+    avatarPath: '/assets/badger.webp',
     colors: {
       primary: '#3b82f6',
       accent: '#93c5fd',
@@ -232,7 +232,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Ooh ooh! See that opportunity? Let\'s swing for it!',
     teachingStyle: 'Krzysztof teaches with energy and excitement. He emphasizes conviction, timing, and knowing when to let go of the vine.',
     philosophy: 'Fortune favors the bold - but the smart bold. Catch the big moves, ride the momentum!',
-    avatarPath: '/assets/monkey.png',
+    avatarPath: '/assets/monkey.webp',
     colors: {
       primary: '#f59e0b',
       accent: '#fcd34d',
@@ -263,7 +263,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Bears? What bears?',
     teachingStyle: 'Bruno teaches with unwavering optimism. He focuses on bullish strategies and finding buying opportunities in every pullback.',
     philosophy: 'The market always goes up eventually. Be positioned for the rally, not the pullback.',
-    avatarPath: '/assets/Bull WSW.jpeg',
+    avatarPath: '/assets/Bull WSW.webp',
     colors: {
       primary: '#ef4444',
       accent: '#fca5a5',
@@ -294,7 +294,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Eight arms, fifty positions.',
     teachingStyle: 'Oscar teaches portfolio-level thinking. He focuses on correlations, hedging across positions, and managing complexity.',
     philosophy: 'Diversification is not just stocks - it\'s strategies, timeframes, and approaches. Thrive in complexity.',
-    avatarPath: '/assets/Octopus WSW.png',
+    avatarPath: '/assets/Octopus WSW.webp',
     colors: {
       primary: '#06b6d4',
       accent: '#67e8f9',
@@ -326,7 +326,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Pessimism is just realism with better hedges.',
     teachingStyle: 'Bertha teaches defensive strategies. She focuses on hedging, protecting gains, and profiting from volatility spikes.',
     philosophy: 'The crash is always coming. The question is: are you prepared? Hedges are not a cost - they\'re insurance.',
-    avatarPath: '/assets/Bertha_Bear_Closeup.png',
+    avatarPath: '/assets/Bertha_Bear_Closeup.webp',
     colors: {
       primary: '#f97316',
       accent: '#fdba74',
@@ -357,7 +357,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Grace under pressure.',
     teachingStyle: 'Diana teaches balance and adaptation. She focuses on delta-neutral strategies and adjusting to market conditions.',
     philosophy: 'The market is an ocean. Don\'t fight the current - learn to navigate it with grace.',
-    avatarPath: '/assets/Dolphin WSW.png',
+    avatarPath: '/assets/Dolphin WSW.webp',
     colors: {
       primary: '#6366f1',
       accent: '#a5b4fc',
@@ -388,7 +388,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'The jungle whispers before it roars—listen to both markets.',
     teachingStyle: 'Cameron teaches you to read two jungles simultaneously. He emphasizes timing, probability analysis, and cross-market signals. Patient observation followed by decisive action.',
     philosophy: 'The best traders see patterns others miss. Options tell you volatility expectations. Prediction markets tell you probability. Together, they reveal the truth the jungle is hiding.',
-    avatarPath: '/assets/chameleon WSW.jpeg',
+    avatarPath: '/assets/chameleon WSW.webp',
     colors: {
       primary: '#8b5cf6',
       accent: '#14b8a6',
@@ -432,7 +432,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'The pack waits. The pack watches. The pack strikes.',
     teachingStyle: 'Wolfgang teaches with cold precision. He emphasizes patience, position sizing, and waiting for high-conviction setups. No chasing, no FOMO—only calculated aggression.',
     philosophy: 'The hunt is won before the strike. Study your prey. Know the terrain. Wait for weakness. Then attack without mercy.',
-    avatarPath: '/assets/Wolf WSW.jpg',
+    avatarPath: '/assets/Wolf WSW.webp',
     colors: {
       primary: '#64748b',
       accent: '#94a3b8',
@@ -477,7 +477,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'When the market jumps, I jump higher!',
     teachingStyle: 'Joey teaches with explosive energy. He focuses on volatility plays, gamma scalping, and positioning for massive moves. High risk, high reward—no middle ground.',
     philosophy: 'Volatility is not risk—it\'s opportunity. The bigger the jump, the bigger the profit. Fortune favors those who embrace the chaos.',
-    avatarPath: '/assets/kangaroo.jpeg',
+    avatarPath: '/assets/kangaroo.webp',
     colors: {
       primary: '#dc2626',
       accent: '#f87171',
@@ -521,7 +521,7 @@ export const JUNGLE_ANIMALS: Record<string, JungleAnimal> = {
     catchphrase: 'Inner peace... and consistent premium.',
     teachingStyle: 'Puffy teaches with tranquility. She emphasizes low-stress strategies, consistent income, and the art of doing less. Quality over quantity.',
     philosophy: 'The market is chaos. You don\'t have to be. Collect your premium, manage your risk, and let time do the work. Stress is the enemy of profits.',
-    avatarPath: '/assets/Panda.jpeg',
+    avatarPath: '/assets/Panda.webp',
     colors: {
       primary: '#059669',
       accent: '#6ee7b7',

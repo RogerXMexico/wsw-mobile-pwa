@@ -358,10 +358,10 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
         id: 'q0-35',
         tier: 0,
         type: 'multiple_choice',
-        question: 'An option premium shows as $0.05. Your friend says "Dude, it\'s only 5 cents!" What\'s the actual cost and what should you tell your friend?',
-        options: ['$0.05 total, your friend is right', '$5.00, but close enough', '$50.00, and your friend needs this course', '$500.00, run away immediately', '$50.00, and you need better friends who understand multiplication'],
+        question: 'An option premium shows as $0.50. Your friend says "Dude, it\'s only 50 cents!" What\'s the actual cost and what should you tell your friend?',
+        options: ['$0.50 total, your friend is right', '$5.00, but close enough', '$50.00, and your friend needs this course', '$500.00, run away immediately', '$50.00, and you need better friends who understand multiplication'],
         correctIndex: 2,
-        explanation: '$0.05 × 100 shares = $50.00. If your friend doesn\'t know this, they\'re about to learn an expensive lesson. Be a good friend—send them this course.'
+        explanation: '$0.50 × 100 shares = $50.00. If your friend doesn\'t know this, they\'re about to learn an expensive lesson. Be a good friend—send them this course.'
     },
     {
         id: 'q0-36',

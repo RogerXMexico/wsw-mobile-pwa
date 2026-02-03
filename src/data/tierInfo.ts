@@ -4,7 +4,7 @@ export const TIER_INFO = [
     { tier: 0, name: 'Foundations', color: 'slate', icon: BookOpen },
     { tier: 0.5, name: 'Express Lane', color: 'amber', icon: Rocket },
     { tier: 3.5, name: 'Proper Mindset', color: 'amber', icon: Target },
-    { tier: 1, name: 'Market Structure', color: 'blue', icon: Target },
+    { tier: 1, name: 'Market Structure', color: 'cyan', icon: Target },
     { tier: 2, name: 'Risk', color: 'amber', icon: Target },
     { tier: 3, name: 'The Anchors', color: 'emerald', icon: Target },
     { tier: 4, name: 'Verticals', color: 'cyan', icon: TrendingUp },

@@ -589,7 +589,7 @@ export default function TradeJournal() {
                           <span
                             className={`text-[10px] px-1.5 py-0.5 rounded font-semibold ${
                               trade.status === 'open'
-                                ? 'bg-blue-500/20 text-blue-400'
+                                ? 'bg-cyan-500/20 text-cyan-400'
                                 : trade.status === 'closed'
                                 ? 'bg-zinc-700 text-zinc-300'
                                 : 'bg-amber-500/20 text-amber-400'

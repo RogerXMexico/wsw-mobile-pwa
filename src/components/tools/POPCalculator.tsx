@@ -1,13 +1,16 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Search, Loader2, Wifi } from 'lucide-react';
 import { cumulativeDistribution } from '../../utils/blackScholes';
+import { useLiveData } from '../../hooks/useLiveData';
 
 type OptionType = 'call' | 'put';
 type PositionType = 'buy' | 'sell';
 
 export default function POPCalculator() {
   const navigate = useNavigate();
+  const { fetchData, loading, liveSymbol, hasKey } = useLiveData();
+  const [symbol, setSymbol] = useState('');
 
   const [stockPrice, setStockPrice] = useState(100);
   const [strikePrice, setStrikePrice] = useState(105);
@@ -15,6 +18,16 @@ export default function POPCalculator() {
   const [iv, setIv] = useState(30);
   const [optionType, setOptionType] = useState<OptionType>('call');
   const [position, setPosition] = useState<PositionType>('buy');
+
+  const handleFetch = async () => {
+    const data = await fetchData(symbol, optionType);
+    if (data) {
+      setStockPrice(data.stockPrice);
+      setStrikePrice(data.strike);
+      setIv(data.iv);
+      setDte(data.dte);
+    }
+  };
 
   const result = useMemo(() => {
     if (stockPrice <= 0 || iv <= 0 || dte <= 0) return null;
@@ -86,6 +99,19 @@ export default function POPCalculator() {
       </div>
 
       <div className="px-4 space-y-4">
+        {/* Live Data Search */}
+        {hasKey && (
+          <div className="flex gap-2">
+            <input type="text" value={symbol} onChange={(e) => setSymbol(e.target.value.toUpperCase())}
+              onKeyDown={(e) => e.key === 'Enter' && handleFetch()}
+              placeholder="Symbol (e.g. AAPL)" className="flex-1 bg-[#0a0a0a] border border-zinc-800 rounded-xl px-3 py-2.5 text-white font-mono text-sm placeholder-zinc-600 focus:border-cyan-500/50 focus:outline-none" />
+            <button onClick={handleFetch} disabled={loading} className="px-4 py-2.5 bg-cyan-600 disabled:bg-zinc-800 text-white rounded-xl text-sm font-bold active:scale-[0.98] flex items-center gap-1.5">
+              {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Search className="w-4 h-4" />}
+            </button>
+          </div>
+        )}
+        {liveSymbol && <div className="flex items-center gap-1.5 text-[10px] text-emerald-400"><Wifi className="w-3 h-3" /> Live: {liveSymbol}</div>}
+
         {/* Circular Gauge */}
         {result && (
           <div className="flex flex-col items-center py-4">
@@ -285,40 +311,8 @@ function SliderInput({
         step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="w-full h-2 rounded-full appearance-none cursor-pointer slider-neon"
+        className="w-full sim-slider"
       />
-      <style>{`
-        .slider-neon::-webkit-slider-track {
-          background: #1a1a1a;
-          border-radius: 9999px;
-          height: 8px;
-        }
-        .slider-neon::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: #39ff14;
-          box-shadow: 0 0 10px #39ff1466;
-          cursor: pointer;
-          margin-top: -8px;
-        }
-        .slider-neon::-moz-range-track {
-          background: #1a1a1a;
-          border-radius: 9999px;
-          height: 8px;
-        }
-        .slider-neon::-moz-range-thumb {
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: #39ff14;
-          box-shadow: 0 0 10px #39ff1466;
-          cursor: pointer;
-          border: none;
-        }
-      `}</style>
     </div>
   );
 }

@@ -34,6 +34,14 @@ const TradeJournal = lazy(() => import('./components/tools/TradeJournal'));
 const GreeksVisualizer = lazy(() => import('./components/tools/GreeksVisualizer'));
 const IVCrushCalc = lazy(() => import('./components/tools/IVCrushCalc'));
 const PaperTrading = lazy(() => import('./components/tools/PaperTrading'));
+const OptionsScreener = lazy(() => import('./components/tools/OptionsScreener'));
+const IVRankTool = lazy(() => import('./components/tools/IVRankTool'));
+const Watchlist = lazy(() => import('./components/tools/Watchlist'));
+const EarningsCalendar = lazy(() => import('./components/tools/EarningsCalendar'));
+const BeginnerMistakes = lazy(() => import('./components/tools/BeginnerMistakes'));
+const AssignmentExercise = lazy(() => import('./components/tools/AssignmentExercise'));
+const OptionChainTutorial = lazy(() => import('./components/tools/OptionChainTutorial'));
+const OptionsQuadrant = lazy(() => import('./components/tools/OptionsQuadrant'));
 
 function LoadingScreen() {
   return <SkeletonList count={6} />;
@@ -132,6 +140,14 @@ function AppRoutes() {
             <Route path="/tools/greeks" element={<GreeksVisualizer />} />
             <Route path="/tools/iv-crush" element={<IVCrushCalc />} />
             <Route path="/tools/paper-trading" element={<PaperTrading />} />
+            <Route path="/tools/screener" element={<OptionsScreener />} />
+            <Route path="/tools/iv-rank" element={<IVRankTool />} />
+            <Route path="/tools/watchlist" element={<Watchlist />} />
+            <Route path="/tools/earnings-calendar" element={<EarningsCalendar />} />
+            <Route path="/tools/beginner-mistakes" element={<BeginnerMistakes />} />
+            <Route path="/tools/assignment-exercise" element={<AssignmentExercise />} />
+            <Route path="/tools/chain-tutorial" element={<OptionChainTutorial />} />
+            <Route path="/tools/quadrant" element={<OptionsQuadrant />} />
 
             {/* Tab 4: Jungle Academy */}
             <Route path="/jungle" element={<JunglePage />} />

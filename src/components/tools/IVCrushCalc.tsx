@@ -388,6 +388,10 @@ function NumInput({ label, value, onChange, prefix, color }: {
 function IVSlider({ label, value, onChange, color }: {
   label: string; value: number; onChange: (v: number) => void; color: string;
 }) {
+  const variant = color.includes('a855f7') ? 'sim-slider sim-slider-purple'
+    : color.includes('22d3ee') ? 'sim-slider sim-slider-cyan'
+    : color.includes('f59e0b') || color.includes('fbbf24') ? 'sim-slider sim-slider-amber'
+    : 'sim-slider';
   return (
     <div className="mb-3">
       <div className="flex justify-between items-center mb-1">
@@ -397,10 +401,7 @@ function IVSlider({ label, value, onChange, color }: {
       <input
         type="range" min={5} max={200} step={1} value={value}
         onChange={(e) => onChange(parseInt(e.target.value))}
-        className="w-full h-2 rounded-full appearance-none cursor-pointer"
-        style={{
-          background: `linear-gradient(to right, ${color} 0%, ${color} ${((value - 5) / 195) * 100}%, #27272a ${((value - 5) / 195) * 100}%, #27272a 100%)`,
-        }}
+        className={`w-full ${variant}`}
       />
     </div>
   );

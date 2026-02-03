@@ -1,13 +1,21 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Search, Loader2, Wifi } from 'lucide-react';
+import { useLiveData } from '../../hooks/useLiveData';
 
 export default function ExpectedMoveCalc() {
   const navigate = useNavigate();
+  const { fetchData, loading, liveSymbol, hasKey } = useLiveData();
+  const [symbol, setSymbol] = useState('');
 
   const [stockPrice, setStockPrice] = useState(100);
   const [iv, setIv] = useState(30);
   const [dte, setDte] = useState(30);
+
+  const handleFetch = async () => {
+    const data = await fetchData(symbol);
+    if (data) { setStockPrice(data.stockPrice); setIv(data.iv); setDte(data.dte); }
+  };
 
   const result = useMemo(() => {
     if (stockPrice <= 0 || iv <= 0 || dte <= 0) return null;
@@ -51,6 +59,15 @@ export default function ExpectedMoveCalc() {
       </div>
 
       <div className="px-4 space-y-4">
+        {/* Live Data */}
+        {hasKey && (
+          <div className="flex gap-2">
+            <input type="text" value={symbol} onChange={(e) => setSymbol(e.target.value.toUpperCase())} onKeyDown={(e) => e.key === 'Enter' && handleFetch()} placeholder="Symbol (e.g. SPY)" className="flex-1 bg-[#0a0a0a] border border-zinc-800 rounded-xl px-3 py-2.5 text-white font-mono text-sm placeholder-zinc-600 focus:border-cyan-500/50 focus:outline-none" />
+            <button onClick={handleFetch} disabled={loading} className="px-4 py-2.5 bg-cyan-600 disabled:bg-zinc-800 text-white rounded-xl text-sm font-bold active:scale-[0.98] flex items-center gap-1.5">{loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Search className="w-4 h-4" />}</button>
+          </div>
+        )}
+        {liveSymbol && <div className="flex items-center gap-1.5 text-[10px] text-emerald-400"><Wifi className="w-3 h-3" /> Live: {liveSymbol}</div>}
+
         {/* Big Expected Move */}
         {result && (
           <div className="bg-[#0a0a0a] border border-[#39ff14]/20 rounded-xl p-6 text-center">
@@ -251,40 +268,8 @@ function MoveSlider({
         step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="w-full h-2 rounded-full appearance-none cursor-pointer move-slider"
+        className="w-full sim-slider"
       />
-      <style>{`
-        .move-slider::-webkit-slider-track {
-          background: #1a1a1a;
-          border-radius: 9999px;
-          height: 8px;
-        }
-        .move-slider::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: #39ff14;
-          box-shadow: 0 0 10px #39ff1466;
-          cursor: pointer;
-          margin-top: -8px;
-        }
-        .move-slider::-moz-range-track {
-          background: #1a1a1a;
-          border-radius: 9999px;
-          height: 8px;
-        }
-        .move-slider::-moz-range-thumb {
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: #39ff14;
-          box-shadow: 0 0 10px #39ff1466;
-          cursor: pointer;
-          border: none;
-        }
-      `}</style>
     </div>
   );
 }

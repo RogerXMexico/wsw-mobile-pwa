@@ -273,7 +273,7 @@ export default function OptionsGlossary() {
                         <>
                           <p className="text-zinc-400 text-xs leading-relaxed mt-1">{t.definition}</p>
                           {t.example && (
-                            <div className="mt-2 p-2 rounded-lg bg-black/40 border-l-2 border-blue-500/40">
+                            <div className="mt-2 p-2 rounded-lg bg-black/40 border-l-2 border-cyan-500/40">
                               <p className="text-zinc-500 text-[10px] uppercase font-mono mb-0.5">Example</p>
                               <p className="text-zinc-400 text-xs">{t.example}</p>
                             </div>

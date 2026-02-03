@@ -22,6 +22,14 @@ const CUSTOM: Record<string, CustomTool> = {
   'rolling': { emoji: '🔄', name: 'Rolling & Adjusting', desc: 'Learn when and how to roll options positions', route: '/tools/rolling-guide' },
   'first-trade': { emoji: '🎯', name: 'Your First Trade', desc: 'Step-by-step guide to placing your first options trade', route: '/tools/first-trade' },
   'glossary': { emoji: '📖', name: 'Options Glossary', desc: 'Searchable dictionary with 50+ terms & flashcard mode', route: '/tools/glossary' },
+  'screener': { emoji: '🔍', name: 'Options Screener', desc: 'Find trades with preset filters and live options chains', route: '/tools/screener' },
+  'iv-rank': { emoji: '📈', name: 'IV Rank & Percentile', desc: 'Is volatility high or low? Check IV Rank before every trade', route: '/tools/iv-rank' },
+  'watchlist': { emoji: '👀', name: 'Watchlist', desc: 'Track your tickers with live quotes and IV monitoring', route: '/tools/watchlist' },
+  'earnings-cal': { emoji: '📅', name: 'Earnings Calendar', desc: 'Track earnings events and get strategy suggestions', route: '/tools/earnings-calendar' },
+  'beginner-mistakes': { emoji: '⚠️', name: 'Beginner Mistakes', desc: 'The 9 most common options mistakes and how to avoid them', route: '/tools/beginner-mistakes' },
+  'assignment': { emoji: '📋', name: 'Assignment & Exercise', desc: 'Understand exercise, assignment, and early assignment risk', route: '/tools/assignment-exercise' },
+  'chain-tutorial': { emoji: '🔗', name: 'Reading Options Chains', desc: 'Interactive tutorial — learn to read a real options chain', route: '/tools/chain-tutorial' },
+  'quadrant': { emoji: '🧭', name: 'Options Quadrant', desc: 'The 4 fundamental positions — your visual mental model', route: '/tools/quadrant' },
 };
 
 const TOOL_SECTIONS: { title: string; tools: ToolDef[]; custom?: string[] }[] = [
@@ -39,7 +47,7 @@ const TOOL_SECTIONS: { title: string; tools: ToolDef[]; custom?: string[] }[] = 
     tools: [
       { id: 'strategy-comparison', emoji: '⚔️', route: '/tools/strategy-comparison' },
     ],
-    custom: ['greeks-viz', 'iv-crush'],
+    custom: ['greeks-viz', 'iv-crush', 'iv-rank', 'screener'],
   },
   {
     title: '🧪 Practice & Building',
@@ -47,21 +55,15 @@ const TOOL_SECTIONS: { title: string; tools: ToolDef[]; custom?: string[] }[] = 
       { id: 'strategy-builder', emoji: '🧪', route: '/tools/strategy-builder' },
       { id: 'trade-journal', emoji: '📓', route: '/tools/trade-journal' },
     ],
-    custom: ['paper-trade'],
+    custom: ['paper-trade', 'watchlist', 'earnings-cal'],
   },
   {
     title: '📚 Tutorials & Reference',
     tools: [],
-    custom: ['rolling', 'first-trade', 'glossary'],
+    custom: ['rolling', 'first-trade', 'glossary', 'beginner-mistakes', 'assignment', 'chain-tutorial', 'quadrant'],
   },
-  {
-    title: '🔮 Event Horizons',
-    tools: [
-      { id: 'event-horizons-course', emoji: '🎓' },
-      { id: 'event-horizons', emoji: '🔮' },
-      { id: 'options-flow', emoji: '🌊' },
-    ],
-  },
+  // Event Horizons section removed — K said skip for now (2026-02-03)
+  // Will be re-added when interactive tools are built
 ];
 
 export default function ToolsPage() {

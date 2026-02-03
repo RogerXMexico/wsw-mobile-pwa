@@ -1,0 +1,85 @@
+import { Strategy } from '../../types';
+
+// Tier 10 - Tier 10
+export const TIER_10_STRATEGIES: Strategy[] = [
+    {
+        id: 'leaderboard',
+        name: 'Leaderboard',
+        tier: 10,
+        tierName: "Let's Play",
+        outlook: 'Educational',
+        objective: 'Gamification',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Leaderboard - click to open</p></div>`,
+        analogy: "See how you rank against other jungle traders. Climb the leaderboard by completing lessons, mastering strategies, and earning XP.",
+        nuance: "<b>Competition:</b> Track your progress against the community. Earn XP through quizzes, lessons, and daily streaks to climb the ranks.",
+        example: ""
+    },,
+    {
+        id: 'badge-collection',
+        name: 'Badge Collection',
+        tier: 10,
+        tierName: "Let's Play",
+        outlook: 'Educational',
+        objective: 'Achievements',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Badge Collection - click to open</p></div>`,
+        analogy: "Your trophy case of trading achievements. Collect badges by mastering strategies, completing challenges, and hitting milestones.",
+        nuance: "<b>Achievements:</b> Every badge tells a story of your trading education journey. From common to legendary, collect them all to prove your jungle mastery.",
+        example: ""
+    },,
+    {
+        id: 'daily-missions',
+        name: 'Daily Missions',
+        tier: 10,
+        tierName: "Let's Play",
+        outlook: 'Educational',
+        objective: 'Daily Challenges',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Daily Missions - click to open</p></div>`,
+        analogy: "Complete daily and weekly challenges to earn XP, maintain your streak, and accelerate your trading education.",
+        nuance: "<b>Consistency:</b> Small daily actions compound into major progress. Complete missions to build habits and earn bonus rewards for maintaining streaks.",
+        example: ""
+    },,
+    {
+        id: 'jungle-tribes',
+        name: 'Jungle Tribes',
+        tier: 10,
+        tierName: "Let's Play",
+        outlook: 'Educational',
+        objective: 'Team Competition',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Jungle Tribes - click to open</p></div>`,
+        analogy: "Join one of six jungle tribes and compete as a team. Lions, Wolves, Bears, Bulls, Owls, or Foxes—choose your trading philosophy.",
+        nuance: "<b>Community:</b> Team up with like-minded traders. Contribute XP to your tribe, chat with teammates, and compete for seasonal glory.",
+        example: ""
+    },,
+    {
+        id: 'social-feed',
+        name: 'Trading Feed',
+        tier: 10,
+        tierName: "Let's Play",
+        outlook: 'Educational',
+        objective: 'Social Trading',
+        risk: 'None',
+        legs: [],
+        hideSimulator: true,
+        hideAnalyst: true,
+        analysis: `<div class="text-center py-12"><p class="text-slate-400">Trading Feed - click to open</p></div>`,
+        analogy: "Share your trades, learn from the community, and celebrate wins together. See what strategies other jungle traders are using.",
+        nuance: "<b>Transparency:</b> Share your trades with full control over what's visible. Learn from others' successes and mistakes in a supportive community.",
+        example: ""
+    }
+];

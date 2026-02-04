@@ -1,5 +1,5 @@
 // BUMP THIS ON EVERY DEPLOY during active development!
-const CACHE_NAME = 'wsw-pwa-v5-20260204-fix';
+const CACHE_NAME = 'wsw-pwa-v6-20260204-fix2';
 const SHELL_ASSETS = [
   '/',
   '/index.html',

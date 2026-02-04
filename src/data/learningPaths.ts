@@ -1,5 +1,5 @@
-import { STRATEGIES } from './strategies';
 import { Strategy } from '../types';
+import { getAllStrategies } from '../utils/curriculum';
 
 export interface LearningPath {
   id: string;
@@ -82,12 +82,13 @@ export const LEARNING_PATHS: LearningPath[] = [
  */
 export function getPathModules(
   path: LearningPath,
-  strategies: Strategy[] = STRATEGIES,
+  strategies?: Strategy[],
 ): Strategy[] {
+  const allStrategies = strategies ?? getAllStrategies();
   const ordered: Strategy[] = [];
 
   for (const tier of path.tierSequence) {
-    const tierStrategies = strategies.filter((s) => s.tier === tier);
+    const tierStrategies = allStrategies.filter((s) => s.tier === tier);
     ordered.push(...tierStrategies);
   }
 

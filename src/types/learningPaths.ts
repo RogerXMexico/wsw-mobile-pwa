@@ -1,4 +1,4 @@
-import { STRATEGIES } from '../data/strategies';
+import { getAllStrategies } from '../utils/curriculum';
 
 export interface LearningPath {
     id: string;
@@ -100,7 +100,7 @@ export const getModulesForPath = (pathId: string): PathModule[] => {
 
     // Get all modules from the recommended tier sequence
     path.tierSequence.forEach(tier => {
-        const tierModules = STRATEGIES.filter(s => s.tier === tier)
+        const tierModules = getAllStrategies().filter(s => s.tier === tier)
             .map(s => ({
                 id: s.id,
                 name: s.name,
@@ -201,7 +201,7 @@ export const getTierProgressInPath = (
         return { completed: 0, total: 0, percent: 0 };
     }
 
-    const tierModules = STRATEGIES.filter(s => s.tier === tier);
+    const tierModules = getAllStrategies().filter(s => s.tier === tier);
     const completed = tierModules.filter(m => completedModules.includes(m.id)).length;
 
     return {

@@ -2,12 +2,37 @@ import { getStrategiesForTiers, getAllTradingStrategiesLazy, getAllStrategiesLaz
 import { TIER_INFO } from '../data/tierInfo';
 import { Strategy } from '../types';
 
-// Cache for sync functions (populated lazily)
-let _strategiesCache: Strategy[] | null = null;
+// Import all tiers eagerly for sync access (backwards compatibility)
+import { TIER_0_STRATEGIES } from '../data/strategies/tier0';
+import { TIER_0_5_STRATEGIES } from '../data/strategies/tier0_5';
+import { TIER_1_STRATEGIES } from '../data/strategies/tier1';
+import { TIER_2_STRATEGIES } from '../data/strategies/tier2';
+import { TIER_3_STRATEGIES } from '../data/strategies/tier3';
+import { TIER_3_5_STRATEGIES } from '../data/strategies/tier3_5';
+import { TIER_4_STRATEGIES } from '../data/strategies/tier4';
+import { TIER_5_STRATEGIES } from '../data/strategies/tier5';
+import { TIER_6_STRATEGIES } from '../data/strategies/tier6';
+import { TIER_7_STRATEGIES } from '../data/strategies/tier7';
+import { TIER_9_STRATEGIES } from '../data/strategies/tier9';
+import { TIER_10_STRATEGIES } from '../data/strategies/tier10';
+
+// Eagerly populated cache for sync access
+const _strategiesCache: Strategy[] = [
+    ...TIER_0_STRATEGIES,
+    ...TIER_0_5_STRATEGIES,
+    ...TIER_1_STRATEGIES,
+    ...TIER_2_STRATEGIES,
+    ...TIER_3_STRATEGIES,
+    ...TIER_3_5_STRATEGIES,
+    ...TIER_4_STRATEGIES,
+    ...TIER_5_STRATEGIES,
+    ...TIER_6_STRATEGIES,
+    ...TIER_7_STRATEGIES,
+    ...TIER_9_STRATEGIES,
+    ...TIER_10_STRATEGIES,
+];
+
 const getStrategiesCache = async (): Promise<Strategy[]> => {
-    if (!_strategiesCache) {
-        _strategiesCache = await getAllStrategiesLazy();
-    }
     return _strategiesCache;
 };
 
@@ -125,20 +150,21 @@ export const SOCIAL_SECTION: Section = {
 
 // ============ HELPERS ============
 
-// DEPRECATED sync versions - use lazy versions instead
+// Sync versions - work with eagerly populated cache
 export function getStrategiesForSection(section: Section): Strategy[] {
-  console.warn('[DEPRECATED] getStrategiesForSection - use getStrategiesForSectionLazy');
-  return _strategiesCache?.filter(s => section.tiers.includes(s.tier)) || [];
+  return _strategiesCache.filter(s => section.tiers.includes(s.tier));
 }
 
 export function getStrategiesForTier(tier: number): Strategy[] {
-  console.warn('[DEPRECATED] getStrategiesForTier - use getStrategiesByTier from strategies');
-  return _strategiesCache?.filter(s => s.tier === tier) || [];
+  return _strategiesCache.filter(s => s.tier === tier);
 }
 
 export function getAllTradingStrategies(): Strategy[] {
-  console.warn('[DEPRECATED] getAllTradingStrategies - use getAllTradingStrategiesLazyFromCurriculum');
-  return _strategiesCache?.filter(s => [3, 4, 5, 6, 7].includes(s.tier)) || [];
+  return _strategiesCache.filter(s => [3, 4, 5, 6, 7].includes(s.tier));
+}
+
+export function getAllStrategies(): Strategy[] {
+  return _strategiesCache;
 }
 
 export function getTierInfo(tier: number) {

@@ -17,7 +17,7 @@ import {
 import { useAuth } from '../contexts/AuthContext';
 import { useProgress } from '../contexts/ProgressContext';
 import { useJungle } from '../contexts/JungleContext';
-import { STRATEGIES } from '../data/strategies';
+import { getAllStrategies } from '../utils/curriculum';
 import { LEARNING_PATHS } from '../data/learningPaths';
 import {
   JUNGLE_BADGES,
@@ -68,7 +68,7 @@ export default function ProfilePage() {
   const [selectedBadge, setSelectedBadge] = useState<JungleBadge | null>(null);
 
   // ── derived data ──
-  const totalStrategies = STRATEGIES.length;
+  const totalStrategies = getAllStrategies().length;
   const completedCount = completed.size;
   const xp = progress.xp;
 
@@ -100,7 +100,7 @@ export default function ProfilePage() {
   }, []);
 
   const bookmarkedStrategies = useMemo(
-    () => STRATEGIES.filter((s) => bookmarks.includes(s.id)),
+    () => getAllStrategies().filter((s) => bookmarks.includes(s.id)),
     [bookmarks],
   );
 

@@ -1,40 +1,5 @@
-import { getStrategiesForTiers, getAllTradingStrategiesLazy, getAllStrategiesLazy } from '../data/strategies';
+import { STRATEGIES } from '../data/strategies';
 import { TIER_INFO } from '../data/tierInfo';
-import { Strategy } from '../types';
-
-// Import all tiers eagerly for sync access (backwards compatibility)
-import { TIER_0_STRATEGIES } from '../data/strategies/tier0';
-import { TIER_0_5_STRATEGIES } from '../data/strategies/tier0_5';
-import { TIER_1_STRATEGIES } from '../data/strategies/tier1';
-import { TIER_2_STRATEGIES } from '../data/strategies/tier2';
-import { TIER_3_STRATEGIES } from '../data/strategies/tier3';
-import { TIER_3_5_STRATEGIES } from '../data/strategies/tier3_5';
-import { TIER_4_STRATEGIES } from '../data/strategies/tier4';
-import { TIER_5_STRATEGIES } from '../data/strategies/tier5';
-import { TIER_6_STRATEGIES } from '../data/strategies/tier6';
-import { TIER_7_STRATEGIES } from '../data/strategies/tier7';
-import { TIER_9_STRATEGIES } from '../data/strategies/tier9';
-import { TIER_10_STRATEGIES } from '../data/strategies/tier10';
-
-// Eagerly populated cache for sync access
-const _strategiesCache: Strategy[] = [
-    ...TIER_0_STRATEGIES,
-    ...TIER_0_5_STRATEGIES,
-    ...TIER_1_STRATEGIES,
-    ...TIER_2_STRATEGIES,
-    ...TIER_3_STRATEGIES,
-    ...TIER_3_5_STRATEGIES,
-    ...TIER_4_STRATEGIES,
-    ...TIER_5_STRATEGIES,
-    ...TIER_6_STRATEGIES,
-    ...TIER_7_STRATEGIES,
-    ...TIER_9_STRATEGIES,
-    ...TIER_10_STRATEGIES,
-];
-
-const getStrategiesCache = async (): Promise<Strategy[]> => {
-    return _strategiesCache;
-};
 
 // ============ TAB 1: RULES OF THE JUNGLE ============
 // Educational foundations — learn before you trade
@@ -150,21 +115,17 @@ export const SOCIAL_SECTION: Section = {
 
 // ============ HELPERS ============
 
-// Sync versions - work with eagerly populated cache
-export function getStrategiesForSection(section: Section): Strategy[] {
-  return _strategiesCache.filter(s => section.tiers.includes(s.tier));
+export function getStrategiesForSection(section: Section) {
+  return STRATEGIES.filter(s => section.tiers.includes(s.tier));
 }
 
-export function getStrategiesForTier(tier: number): Strategy[] {
-  return _strategiesCache.filter(s => s.tier === tier);
+export function getStrategiesForTier(tier: number) {
+  return STRATEGIES.filter(s => s.tier === tier);
 }
 
-export function getAllTradingStrategies(): Strategy[] {
-  return _strategiesCache.filter(s => [3, 4, 5, 6, 7].includes(s.tier));
-}
-
-export function getAllStrategies(): Strategy[] {
-  return _strategiesCache;
+export function getAllTradingStrategies() {
+  // Tiers 3-7: actual trading strategies for the encyclopedia (excludes 3.5 Proper Mindset)
+  return STRATEGIES.filter(s => [3, 4, 5, 6, 7].includes(s.tier));
 }
 
 export function getTierInfo(tier: number) {
@@ -201,14 +162,4 @@ export function getTierBadgeColor(tier: number): string {
   };
   const info = getTierInfo(tier);
   return colors[info?.color || 'slate'] || colors.slate;
-}
-
-// ============ LAZY LOADING VERSIONS ============
-
-export async function getStrategiesForSectionLazy(section: Section): Promise<Strategy[]> {
-  return getStrategiesForTiers(section.tiers);
-}
-
-export async function getAllTradingStrategiesLazyFromCurriculum(): Promise<Strategy[]> {
-  return getAllTradingStrategiesLazy();
 }

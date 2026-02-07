@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getStrategiesByTier } from '../data/strategies';
-import { Strategy } from '../types';
-import { Loader2 } from 'lucide-react';
+import { STRATEGIES } from '../data/strategies';
+import { useProgress } from '../contexts/ProgressContext';
 
 interface ToolDef {
   id: string;
@@ -64,29 +62,12 @@ const TOOL_SECTIONS: { title: string; tools: ToolDef[]; custom?: string[] }[] = 
     tools: [],
     custom: ['rolling', 'first-trade', 'glossary', 'beginner-mistakes', 'assignment', 'chain-tutorial', 'quadrant'],
   },
+  // Event Horizons section removed — K said skip for now (2026-02-03)
+  // Will be re-added when interactive tools are built
 ];
 
 export default function ToolsPage() {
   const navigate = useNavigate();
-  const [strategies, setStrategies] = useState<Strategy[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  // Load tier 9 strategies (tools) lazily
-  useEffect(() => {
-    getStrategiesByTier(9).then((s) => {
-      setStrategies(s);
-      setLoading(false);
-    });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="px-4 pb-24 flex flex-col items-center justify-center min-h-[50vh]" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 24px)' }}>
-        <Loader2 className="w-8 h-8 text-[#39ff14] animate-spin" />
-        <p className="text-zinc-400 mt-4">Loading tools...</p>
-      </div>
-    );
-  }
 
   return (
     <div className="px-4 pb-24" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 24px)' }}>
@@ -101,7 +82,7 @@ export default function ToolsPage() {
           <div className="space-y-2">
             {/* Strategy-based tools */}
             {section.tools.map((toolDef) => {
-              const strategy = strategies.find((s) => s.id === toolDef.id);
+              const strategy = STRATEGIES.find((s) => s.id === toolDef.id);
               if (!strategy) return null;
               return (
                 <button
